@@ -1,0 +1,683 @@
+/**
+* @category   Contus
+* @package    Contus_web 
+* @version    1.0
+* @author     vimal <vimalraj@contus.in>
+* @copyright  Copyright (C) 2015 Contus. All rights reserved.
+* @license    GNU General Public License http://www.gnu.org/copyleft/gpl.html 
+*
+**/
+.wrapper{width: 1090px;margin: 0 auto;}
+.mobile-sprite{background: url(http://img.contus.com/new_images/mobile-page/mobile-sprite.png) no-repeat;}
+
+.top-banners .livechat{position: absolute;bottom: 25px;z-index:99;padding: 10px 35px;border-radius: 5px;cursor: pointer;display: block;left: 50%;margin-left: -83px;text-transform: uppercase;font-family: 'proxima_novasemibold';font-size: 20px;color: #00ccff;border: 2px solid #00ccff;}
+.top-banners .livechat:hover{background: #00ccff;color: #FFF;}
+.loading-banner{box-sizing: border-box;background:rgba(16, 16, 16, 0.56) url(http://img.contus.com/new_images/mobile-page/loader.gif) no-repeat center;padding: 8px;border-radius: 40px;position: absolute;z-index: 999;top: 45%;left: 48%;width: 20px;height: 20px;text-align: center;}
+
+.top-banners{height: 543px;position: relative;background: #000;}
+.mobile-banners h1{width:100%;text-shadow: -2px 1px 3px rgba(2, 2, 2, 0.15);font-size:43px;color: #FFF;font-family: 'proxima_novasemibold';text-align: center;position: absolute;top:32%;font-weight: normal;line-height: 46px;text-transform: capitalize;padding:0 20px;box-sizing:border-box;}
+.mobile-banners h1 span{display: block;font-size: 23px;font-family: 'proxima_nova_rgregular';text-transform: capitalize;}
+.mobile-banners {display:none;position: relative;}
+.mobile-banners .slidesjs-container,
+.mobile-banners .slidesjs-control{height: 543px !important}
+.mobile-banners img{width: 100%;}
+.mobile-banners div{width: 100%;height: 543px;background-size:cover;}
+.mobile-banners .bigcont{width: 65%;left:16%;top:39%;line-height: 50px;}
+.mobile-banners .bigcont span{margin-top: 8px;}
+.mobile-banners .slide1{background: url(http://img.contus.com/new_images/mobile-page/banners/mahindra.jpg) top center no-repeat;background-size:cover;display: none}
+.mobile-banners .slide2{background: url(http://img.contus.com/new_images/mobile-page/banners/pcnc.jpg) top center no-repeat;background-size:cover;display: none}
+.mobile-banners .slide3{background: url(http://img.contus.com/new_images/mobile-page/banners/lansdowne.jpg) top center no-repeat;background-size:cover;display: none}
+.mobile-banners .slide4{background: url(http://img.contus.com/new_images/mobile-page/banners/mobile_ecommerce.jpg) top center no-repeat;background-size:cover;display: none}
+.mobile-banners .slide5{background: url(http://img.contus.com/new_images/mobile-page/banners/lifeSaver.jpg) top center no-repeat;background-size:cover;display: none}
+.mobile-banners .slide6{background: url(http://img.contus.com/new_images/mobile-page/banners/varlt.jpg) top center no-repeat;background-size:cover;display: none}
+.mobile-banners .slide7{background: url(http://img.contus.com/new_images/mobile-page/banners/spytimer.jpg) top center no-repeat;background-size:cover;display: none}
+
+.android-slider .android-slide1{background: url(http://img.contus.com/new_images/mobile-page/banners/trimandtone.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide2{background: url(http://img.contus.com/new_images/mobile-page/banners/lspoof.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide3{background: url(http://img.contus.com/new_images/mobile-page/banners/lansdowne.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide4{background: url(http://img.contus.com/new_images/mobile-page/banners/mpp-viewer.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide5{background: url(http://img.contus.com/new_images/mobile-page/banners/lifeSaver.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide6{background: url(http://img.contus.com/new_images/mobile-page/banners/salesforce.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide7{background: url(http://img.contus.com/new_images/mobile-page/banners/spytimer.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide8{background: url(http://img.contus.com/new_images/mobile-page/banners/pos.jpg) top center no-repeat;background-size:cover;display: none}
+.android-slider .android-slide9{background: url(http://img.contus.com/new_images/mobile-page/banners/social-trends.jpg) top center no-repeat;background-size:cover;display: none}
+
+.ios-slider .ios-slide1{background: url(http://img.contus.com/new_images/mobile-page/banners/live-leak.jpg) top center no-repeat;background-size:cover;display: none}
+.ios-slider .ios-slide2{background: url(http://img.contus.com/new_images/mobile-page/banners/love-it-up.jpg) top center no-repeat;background-size:cover;display: none}
+.ios-slider .ios-slide3{background: url(http://img.contus.com/new_images/mobile-page/banners/lansdowne.jpg) top center no-repeat;background-size:cover;display: none}
+.ios-slider .ios-slide4{background: url(http://img.contus.com/new_images/mobile-page/banners/mobile_ecommerce.jpg) top center no-repeat;background-size:cover;display: none}
+.ios-slider .ios-slide5{background: url(http://img.contus.com/new_images/mobile-page/banners/lifeSaver.jpg) top center no-repeat;background-size:cover;display: none}
+.ios-slider .ios-slide6{background: url(http://img.contus.com/new_images/mobile-page/banners/sooper-trailers.jpg) top center no-repeat;background-size:cover;display: none}
+.ios-slider .ios-slide7{background: url(http://img.contus.com/new_images/mobile-page/banners/stuffdot.jpg) top center no-repeat;background-size:cover;display: none}
+
+.windows-slider .windows-slide1{background: url(http://img.contus.com/new_images/mobile-page/banners/activity-smartly.jpg) top center no-repeat;background-size:cover;display: none}
+.windows-slider .windows-slide2{background: url(http://img.contus.com/new_images/mobile-page/banners/emergency-call.jpg) top center no-repeat;background-size:cover;display: none}
+.windows-slider .windows-slide3{background: url(http://img.contus.com/new_images/mobile-page/banners/health-opinion.jpg) top center no-repeat;background-size:cover;display: none}
+.windows-slider .windows-slide4{background: url(http://img.contus.com/new_images/mobile-page/banners/mahindra.jpg) top center no-repeat;background-size:cover;display: block}
+.windows-slider .windows-slide5{background: url(http://img.contus.com/new_images/mobile-page/banners/near-to-me.jpg) top center no-repeat;background-size:cover;display: none}
+.windows-slider .windows-slide6{background: url(http://img.contus.com/new_images/mobile-page/banners/sooper-trailers.jpg) top center no-repeat;background-size:cover;display: none}
+.windows-slider .windows-slide7{background: url(http://img.contus.com/new_images/mobile-page/banners/win-maps.jpg) top center no-repeat;background-size:cover;display: none}
+
+.mobile-banners .slidesjs-pagination{position: absolute;bottom: 10px;z-index: 999999;text-align: center;right: 25px}
+.mobile-banners .slidesjs-pagination li{margin: 3px;}
+.mobile-banners .slidesjs-pagination a{text-indent: -9999em;background: #fff;height: 9px;width: 9px;border-radius: 23px;}
+.mobile-banners .slidesjs-pagination .active{background: #00D8FF;}
+.mobile-banners .slidesjs-stop,           
+.mobile-banners .slidesjs-play{display: none !important;}
+.mobile-banners .slidesjs-previous{background: url(http://img.contus.com/new_images/mobile-page/mobile-sprite.png) no-repeat;width: 20px;height: 30px;text-indent: -99999999999em;left: 20px;top:50%;position: absolute;z-index: 999999999;background-position: -442px -252px;margin-top: -15px}
+.mobile-banners .slidesjs-next{  background: url(http://img.contus.com/new_images/mobile-page/mobile-sprite.png) no-repeat;width: 20px;height: 30px;text-indent: -99999999999em;right:20px;top:50%;position: absolute;z-index: 999999999;background-position: -444px -221px;margin-top: -15px}
+.whats-new .blogs{width: 100%}
+              
+.mobile-app .metrics-wrap{background:#f6f9fc;padding: 30px 0;border-bottom: #e8f0f9 1px solid}
+.mobile-app .metrics-wrap .metrics{margin:30px auto 20px}
+.metrics-wrap .metrics li{float: left;width: 14%;margin: 0 31px;}
+.metrics-wrap .metrics i{display:block;width:44px;height:45px;margin: 0 auto 11px;}
+.metrics-wrap .metrics .app-ic{background-position: 0 0}
+.metrics-wrap .metrics .test-ic{background-position:-45px 0}
+.metrics-wrap .metrics .dev-ic{background-position:-89px 0}
+.metrics-wrap .metrics .ready-ic{background-position:-135px 0}
+.metrics-wrap .metrics .mill-ic{background-position:-180px 0}
+.metrics-wrap .metrics h4{font-size: 36px;font-family: 'proxima_novasemibold';width: 180px;overflow: hidden;line-height: 44px;margin: 0 auto}
+.metrics-wrap .metrics .sec{width: 160px;}
+.metrics-wrap .metrics .mill{width: 106px;}
+.metrics-wrap .metrics .ready{width: 189px;}
+.metrics-wrap .metrics .light{font-size: 16px;width:90px;line-height:18px;margin: 3px;display: inline-block;}
+.metrics .ready .light{width:119px;}
+.metrics-wrap .metrics .metrics-num{float: left;}
+.metrics .mill .light{width: 78px;}
+
+.apps .app-metrics{background:#f6f9fc;padding: 30px 0;border-bottom: #e8f0f9 1px solid}
+.apps .app-metrics .metrics{margin:30px auto 20px}
+.app-metrics .metrics li{float: left;width: 17%;margin: 0 16px;}
+.app-metrics .metrics i{display:block;width:50px;height:50px;margin: 0 auto 11px;}
+.app-metrics .metrics h4{font-size: 36px;font-family: 'proxima_novasemibold';overflow: hidden;line-height: 44px;text-align: center;}
+.app-metrics .metrics .light{display: inline-block;font-size: 16px;width:70px;line-height:18px;margin-top: 3px;text-align: left;}
+.app-metrics .metrics .metrics-num{margin-right: 5px;}
+.app-metrics .metrics .big-text{width: 95px;}
+
+.app-metrics .metrics .ios-first-icon{background-position: -307px -726px;}
+.app-metrics .metrics .ios-second-icon{background-position:-366px -724px;}
+.app-metrics .metrics .ios-third-icon{background-position:-303px -778px;}
+.app-metrics .metrics .ios-fourth-icon{background-position:-358px -778px;}
+.app-metrics .metrics .ios-fifth-icon{background-position:-417px -775px;}
+
+.app-metrics .metrics .and-first-icon{background-position: -1px -779px;}
+.app-metrics .metrics .and-second-icon{background-position:-64px -779px;width:59px}
+.app-metrics .metrics .and-third-icon{background-position:-134px -779px;}
+.app-metrics .metrics .and-fourth-icon{background-position:-190px -779px;}
+.app-metrics .metrics .and-fifth-icon{background-position:-242px -779px;}
+.app-metrics .android .light{width:80px;}
+.app-metrics .android .big-text{width: 95px;}
+
+.app-metrics .metrics .win-first-icon{background-position: 5px -724px;}
+.app-metrics .metrics .win-second-icon{background-position:-57px -724px;}
+.app-metrics .metrics .win-third-icon{background-position:-117px -724px;}
+.app-metrics .metrics .win-fourth-icon{background-position:-178px -724px;}
+.app-metrics .metrics .win-fifth-icon{background-position:-233px -724px;}
+.app-metrics .win .light{width:80px;}
+.app-metrics .win .big-text{width: 95px;}
+
+.technologies-wrap{margin-top: 50px;position: relative;}
+.technologies-wrap .technologies-wrap-content{display: block;margin: 10px auto 0;width: 775px;font-size: 18px;line-height: 26px;color: #000;}
+.technologies-wrap .tabs-bg{border-bottom: 1px solid #d7d7d7;border-top: 1px solid #d7d7d7;background: #f5f5f5;}
+.technologies-wrap ul li{float: left;}
+.technologies-wrap ul a{padding: 13px 0;display: block;width: 217px;box-sizing: border-box;}
+.technologies-wrap .top_active,
+.technologies-wrap .bottom_active{color: #fff;position: relative;background: #2ccab2}
+.technologies-wrap .top_active:hover,
+.technologies-wrap .bottom_active:hover{color: #fff;}
+.technologies-wrap .top_active .ar-ic{background-position: 0 -97px;}
+.technologies-wrap .top_active .mcom-ic{background-position: -52px -97px;}
+.technologies-wrap .top_active .wear-ic{background-position:-103px -97px;}
+.technologies-wrap .top_active .geo-ic{background-position:-161px -97px;}
+.technologies-wrap .top_active .mob-ic{background-position:-215px -97px;}
+.technologies-wrap .bottom_active .reward-ic{background-position:-262px -97px;}
+.technologies-wrap .bottom_active .video-ic{background-position:-318px -97px;}
+.technologies-wrap .bottom_active .hybrid-ic{background-position:-372px -97px;}
+.technologies-wrap .bottom_active .ble-ic{background-position:-428px -97px;}
+.technologies-wrap .bottom_active .ent-ic{background-position:-420px 4px;}
+.technologies-wrap .top_active:before{box-sizing: border-box;content: "";position: absolute;width: 0;height: 0;border-style: solid;border-color: transparent;border-bottom: 0;border-width:8px;left: 46%;bottom: -8px;z-index: 1;border-top-color: #2ccab2;}
+.technologies-wrap .bottom_active:before{box-sizing: border-box;content: "";position: absolute;width: 0;height: 0;border-style: solid;border-color: transparent;border-top: 0;border-width:8px;left: 46%;top: -8px;z-index: 1;border-bottom-color: #2ccab2;}
+.technologies-wrap ul a{color:#737373;font-size: 16px;text-align: center;display: block;}
+.technologies-wrap ul a:hover{color:#000;}
+
+.technologies-wrap  ul i{display: block;width: 51px;height: 47px;margin:0 auto 10px;}
+.technologies-wrap .ar-ic{background-position:0 -47px;}
+.technologies-wrap .mcom-ic{background-position:-52px -47px}
+.technologies-wrap .wear-ic{background-position:-103px -47px}
+.technologies-wrap .geo-ic{background-position:-161px -47px}
+.technologies-wrap .mob-ic{background-position:-215px -47px}
+.technologies-wrap .video-ic{background-position:-318px -47px}
+.technologies-wrap .hybrid-ic{background-position:-372px -47px}
+.technologies-wrap .ble-ic{background-position:-428px -47px}
+.technologies-wrap .ent-ic{background-position:-367px 4px}
+.technologies-wrap .reward-ic{background-position:-262px -47px}
+.technologies-wrap .content{height:404px;position: relative;}
+.technologies-wrap .content img{position: absolute;right: 0;bottom: 0;}
+.technologies-wrap .l-content{width: 550px;float: left;margin-top:108px;}
+.technologies-wrap .content h6{font-size: 24px;margin-bottom: 18px;}
+.technologies-wrap .content p{font-size: 17px;color: #000;line-height: 26px;}
+.technologies-wrap .tabs-list{height: 404px}
+
+.ar-img{background: url(http://img.contus.com/new_images/mobile-page/tab/ar.jpg) bottom right no-repeat;float: right;width: 410px;height: 404px;}
+.signup-wrap{background: #6acacd;padding:40px 0;display: block;}
+.signup-wrap h3{font-size: 26px;color: #FFF;text-align: center;margin-bottom: 25px;}
+.signup-wrap .signup{width: 992px;margin: 0 auto;}
+.signup-wrap .signup li{float: left;clear: both;}
+.signup-wrap .signup .up{clear: none;margin-top: -40px;}
+.signup-wrap .signup .txtname{box-sizing: border-box;width: 253px;float: left;padding:10px 14px;background: #FFF;border: 0;border-radius:4px;font-size: 16px;font-family: 'proxima_novalight';}
+.signup-wrap .signup .txtemail{box-sizing: border-box;width: 253px;float: left;padding:10px 14px;background: #FFF;border: 0;border-radius:4px;clear: left;margin-top: 16px;font-size: 16px;font-family: 'proxima_novalight';}
+.signup-wrap .signup .txtmsg{box-sizing: border-box;width:486px;padding: 12px 14px 13px;background: #FFF;border: 0;border-radius:4px;margin-left: 12px;font-size: 16px;font-family: 'proxima_novalight';resize:vertical}
+.signup-wrap .signup .submitbtn{box-sizing: border-box;float: right;background: #094b47;color: #FFF;padding: 10px 42px;border: 0;border-radius:5px;margin:25px 20px;font-family: 'proxima_novasemibold';font-size: 16px;}
+
+.digital{padding: 40px 0;position: relative;margin: 30px 0;}
+.digital .light{display: block;width:60%;margin: 0 auto;font-size: 20px;line-height: 26px;text-align: center;}
+.digital-steps{margin: 60px auto 0;position: relative;}
+.digital-steps .digital-design{margin-top: 8px;float: left;padding: 86px 70px;margin-right: 30px;background-position: -1px -519px;}
+.digital-steps .right-content{float: left;width: 300px;}
+.digital-steps .right-content h4{font-family: 'proxima_novasemibold';color: #000;line-height: 30px;font-size: 27px;}
+.digital-steps .right-content p{font-size: 16px;color: #2F2E2E;line-height: 23px;}
+.digital-steps .design-process{background: url(http://img.contus.com/new_images/mobile-page/design.jpg) no-repeat;padding: 134px 274px;position: absolute;right: 0;top: -25px;}
+.digital-steps .digital-develop{margin-top: 23px;float: left;padding: 86px 73px;margin-right: 30px;background-position: -148px -554px;}
+.digital-steps .development-process{background: url(http://img.contus.com/new_images/mobile-page/development.jpg) no-repeat;padding: 111px 297px;position: absolute;right: 0;top: -15px;}
+.digital-steps .digital-delivery{margin-top: 37px;float: left;padding: 71px 81px;margin-right: 30px;background-position: -280px -424px;}
+.digital-steps .delivery-process{background: url(http://img.contus.com/new_images/mobile-page/delivery.jpg) no-repeat;padding: 111px 266px;position: absolute;right: 0;top: -12px;}
+
+.digital-development{display: none;}
+.digital-development{height: 333px}
+.digital-development .slidesjs-container,
+.digital-development .slidesjs-control{height: 333px !important}
+.digital-development .slidesjs-pagination{position: absolute;bottom: 10px;z-index: 999999;width: 100%;text-align: center;}
+.digital-development .slidesjs-pagination li{margin: 4px;display: inline-block;}
+.slidesjs-pagination li a{text-indent: -9999em;display:inline-block;background:#92deeb;height: 10px;width:10px;border-radius: 23px;}
+.digital-development .slidesjs-pagination .active{background:#34495e;} 
+
+.happy-clients-wrap{padding:42px 0;clear: both;text-align: center;background: #f3f5f9;border-top:1px solid #eaf0f3}
+.happy-clients ul{overflow: hidden;margin-top: 14px;}
+.happy-clients ul li{box-sizing: border-box;float: left;padding:20px 56px;width:272px;position: relative;cursor: pointer;overflow: hidden;height:208px;}
+.happy-clients ul i{margin: 0 auto 10px;width:100px;height:99px;display: block;}
+.happy-clients .clientone{background-position:0 -237px;}
+.happy-clients .clienttwo{background-position:-202px -236px;}
+.happy-clients .clientthree{background-position:-302px -236px;}
+.happy-clients .clientfour{background-position:-101px -237px;}
+.happy-clients ul p{font-size: 14px;color: #01669a;margin: 0;}
+.happy-clients ul span{font-family: 'proxima_novalight';color: #808a94;margin-top: 2px;display: block;line-height: 18px;font-size: 13px;}
+.happy-clients ul strong{display: block;font-family: 'proxima_novasemibold';}
+
+.view-client-list .mask {box-sizing: border-box;background-color: rgba(0,103,151,0.9);-webkit-transform: translateY(-383px);-moz-transform: translateY(-383px);-o-transform: translateY(-383px);-ms-transform: translateY(-383px);transform: translateY(-383px);-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;width: 272px;height:208px;border-radius: 3px;position: absolute;overflow: hidden;top: 0;left: 0;text-align: center;display: none\9;padding: 21px 20px;}
+.view-client-list:hover .mask { -webkit-transform: translateY(0);-moz-transform: translateY(0);-o-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0);display: block\9;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#9f006797,endColorstr=#9f006797);}
+.view-client-list .mask h5{color: #fff;font-size: 19px;font-family: 'proxima_novasemibold';}
+.view-client-list .mask span{display: block;color:#99c2d5;font-size: 14px;font-family: 'proxima_novalight';}
+.happy-clients .mask p {color: #fff;}
+
+.whats-new-wrap{margin:50px 20px;overflow: hidden;clear: both;}
+.whats-new ul{clear: both;}
+.whats-new .ajaxCon{width: 100%;}
+.whats-new ul li{float: left;margin: 0 22px;width:319px;position: relative;}
+.whats-new ul a{font-family: 'proxima_novalight';color: #000;font-size:18px;display: block;text-align: center;margin:8px auto;position: relative;}
+.whats-new ul a:hover{color: #146db8;}
+.whats-new ul img{width:319px !important;}
+.whats-new .readmore{display: none;}
+.whats-new .bottom{box-sizing: border-box;position: absolute;border-radius: 5px;background: #FFF;width: 40px;bottom: 20px;right: 20px;text-align: center;border: 1px solid #C3C3C3;}
+.whats-new .bottom .date{width:30px;overflow: hidden;display: block;margin: 0 auto;font-size: 10px;text-transform: uppercase;}
+.whats-new .date span{font-weight: bold;font-size: 17px;clear: both;display: block;line-height: 15px;height: 22px;}
+.whats-new .more{box-sizing: border-box;font-family: 'proxima_novasemibold';border-radius: 5px;border: 2px solid #0095da;color: #0095da;font-size: 15px;text-align: center;padding:9px 0;width: 161px;margin: 26px auto 0;display: block;line-height: 22px;margin-bottom: 13px;transition: 0.5s ease;}             
+.whats-new .more:hover{background:#0095da;color: #FFF}
+
+.signup-wrap{background: #6acacd;padding:30px 0;display: block;}
+.signup-wrap h3{font-size: 26px;color: #FFF;text-align: center;margin-bottom: 25px;}
+.signup-wrap .signup{width: 992px;margin: 0 auto;}
+.signup-wrap .signup li{float: left;clear: both;position: relative;margin-bottom: 12px;}
+.signup-wrap .signup .up{clear: none;margin-top: -50px;}
+.signup-wrap .signup .txtname{box-sizing: border-box;width: 253px;float: left;padding:10px 14px;background: #FFF;border: 0;border-radius:4px;font-size: 16px;font-family: 'proxima_novalight';}
+.signup-wrap .signup .txtemail{box-sizing: border-box;width: 253px;float: left;padding:10px 14px;background: #FFF;border: 0;border-radius:4px;clear: left;margin-top:6px;font-size: 16px;font-family: 'georgia';}
+.signup-wrap .signup .txtmsg{box-sizing: border-box;width:486px;padding: 11px 14px;background: #FFF;border: 0;border-radius:4px;height:72px;margin-left: 12px;font-size: 16px;font-family: 'proxima_novalight';resize:vertical}
+.signup-wrap .signup .submitbtn{box-sizing: border-box;float: right;background: #094b47;color: #FFF;padding: 10px 42px;border: 0;border-radius:5px;margin:25px 20px;font-family: 'proxima_novasemibold';font-size: 16px;}
+
+.text-cont-error .txtname, .text-cont-error .txtnam, .text-cont-error .txtemai, .text-cont-error .txtemail, .text-cont-error input::-webkit-input-placeholder{color: #E28989;}
+.text-cont-error .txtname, .text-cont-error .txtnam, .text-cont-error .txtemai, .text-cont-error .txtemail, .text-cont-error input:-moz-placeholder { /* Firefox 18- */color: #E28989;  }
+.text-cont-error .txtname, .text-cont-error .txtnam, .text-cont-error .txtemai, .text-cont-error .txtemail, .text-cont-error input::-moz-placeholder {  /* Firefox 19+ */ color: #E28989;}
+.text-cont-error .txtname, .text-cont-error .txtnam, .text-cont-error .txtemai, .text-cont-error .txtemail, .text-cont-error input:-ms-input-placeholder {color: #E28989;}
+.text-cont-error input[value]{color: #E28989}
+.text-cont-error textarea[value]{color: #E28989}
+.text-cont-error textarea::-webkit-input-placeholder{color: #E28989;}
+.text-cont-error textarea:-moz-placeholder { /* Firefox 18- */color: #E28989;  }
+.text-cont-error textarea::-moz-placeholder {  /* Firefox 19+ */ color: #E28989;}
+.text-cont-error textarea:-ms-input-placeholder {color: #E28989;}
+
+.mobile-app_r{border-bottom: 1px solid #d8d8d8;padding: 50px 0;box-sizing:border-box}
+.mobile-app_r h3{font-size: 32px;margin-bottom: 20px;}
+.mobile-app_r h3 span{font-size: 22px;display: block;}
+.mobile-app_r .mobile-app-signup{width:634px;margin: 0 auto;}
+.mobile-app_r .mobile-app-signup .txtnam{box-sizing: border-box;width:300px;float: left;background: #ebebeb;border-radius: 4px;border: 0;padding: 11px 13px;}
+.mobile-app_r .mobile-app-signup .txtemai{box-sizing: border-box;width:300px;float:left;background: #ebebeb;border-radius: 4px;border: 0;padding:11px 13px;}
+.mobile-app_r .mobile-app-signup li{float: left;position: relative;}
+.mobile-app_r .mobile-app-signup .li-email{float: right;}
+.mobile-app_r .mobile-app-signup .txtms{box-sizing: border-box;width:633px;float: left;background: #ebebeb;border-radius: 4px;border: 0;padding:11px 13px;height: 149px;margin-top:15px;resize:vertical}
+.mobile-app_r .mobile-app-signup .submitbtn{box-sizing: border-box;background: #d05656;color: #FFF;text-transform: uppercase;width: 142px;margin:38px auto 0;padding: 10px 0;border: 0;display: block;border-radius: 4px;font-family: 'proxima_novasemibold';font-size: 16px;float: right;}
+.mobile-app_r .mobile-app-signup .submitbtn:hover{background: #ff9494}
+.mobile-app_r .mobile-app-signup .mid{float: none;position: relative;}
+
+.winning-wrap{width: 100%;background: #eff2f6;overflow: hidden;}
+.winning{margin-top: 5px;}	
+.winning ul{clear: none;}	
+.winning li{box-sizing: border-box;width: 255px;padding:35px 0;margin:0 5px 5px 0;float: left;width: 250px\9;}
+.winning li i{display: block;margin: 0 auto;height: 74px;}
+.winning-wrap .winning-img{background-position: -317px -148px;width: 58px;height: 55px;float: right;}
+.winning .source-line{background-position: -3px -345px;width: 141px;}
+.winning .esparks{background-position: -147px -348px;width: 134px;}
+.winning .sme{background-position:-6px -419px;width: 137px;}
+.winning .red{background-position: -152px -432px;width: 75px;}
+.winning .bma{background-position: -285px -348px;width: 77px;}
+.winning .bwda{background-position: -367px -346px;width: 95px;}
+.winning-wrap .main-img{margin:77px 50px;font-size: 32px;color: #494848;line-height: 40px;text-align: right;float: left;}
+.winning-wrap .main-img span{display: block;width: 164px;clear: both;}
+.winning-wrap .ashcolor{background: #f4f7fd;}
+.winning-wrap .whitecolor{background: #FFF}
+
+.contus-news{overflow: hidden;padding: 0 20px;margin: 60px 0}
+.contus-news h3 span{font-size: 20px;color: #333333;line-height: 40px;display: block;}
+.contus-news .news-list{overflow: hidden;}
+.contus-news .news-list li{float: left;margin: 20px 0;width: 217px;height: 20px;text-align: center;}
+.contus-news .news-list .yahoo{padding: 4px 51px;background-position: 0 -146px;}
+.contus-news .news-list .bw{padding: 4px 84px;background-position: -103px -146px;}
+.contus-news .news-list .deccan{padding: 8px 66px;background-position: -1px -204px;}
+.contus-news .news-list .times{padding: 3px 87px;background-position: -129px -176px;}
+.contus-news .news-list .smeworld{padding: 6px 63px;background-position: -3px -174px;}
+
+.success-stories{overflow: hidden;padding: 25px 20px;background: #f2f7fc;border-top:1px solid #e9f1f9;border-bottom:1px solid #e9f1f9;}
+.success-stories h3 span{font-size: 20px;color: #333333;line-height: 40px;display: block;}
+.success-stories .view-more-btn{box-sizing: border-box;font-family:'proxima_novasemibold';border-radius: 5px;border: 2px solid #0095da;color: #0095da;font-size: 15px;text-align: center;padding:9px 0;width: 161px;margin: 26px auto 0;display: block;line-height: 22px;margin-bottom: 13px;transition: 0.5s ease;text-transform: uppercase;}             
+.success-stories .view-more-btn:hover{background:#0095da;color: #FFF}
+
+.mobile-page-links{overflow: hidden;margin: 20px auto;}
+.mobile-page-links li{float: left;width: 33%;text-align: center;}
+.mobile-page-links li a{font-size:24px;color: #343232;font-family: 'proxima_nova_rgregular';display: block}
+.mobile-page-links li a:hover{color: #08c}
+.mobile-page-links li i{vertical-align: middle;margin-right: 10px;display: inline-block;}
+.mobile-page-links .mobile-link{padding: 22px 15px;background-position: -378px 0;}
+.mobile-page-links .ios-link{padding: 24px 17px;background-position: -236px 0;}
+.mobile-page-links .and-link{padding: 23px 20px;background-position: -281px 0;}
+.mobile-page-links .win-link{padding: 23px 21px;background-position: -326px 0;}
+
+.accordioncontainer h3{font-family: 'proxima_novasemibold';text-align: left;line-height: 22px;padding:7px 10px;border-top: 1px solid #e8e8e8;text-transform: uppercase;font-size: 16px ;cursor: pointer;margin: 0;}
+.accordioncontainer .l-content p{font-size: 16px;line-height: 25px;}
+.accordioncontainer .AccordionContent {border-bottom: 1px solid #e8e8e8; }
+.accordioncontainer .active{color: #3BA6E4;}
+.accordioncontainer h3 i{float: right;margin: 5px;padding: 11px;background-position:-439px -171px}
+.accordioncontainer .active i{background-position: -439px -196px;}
+.hidden-content{display:none;}
+.accordioncontent{height:auto !important;overflow:auto;display:none; }
+
+.more-content{width: 1020px;margin: 0 auto;overflow: hidden;position: relative;}
+.more_contents{float: left;background: #efefef;box-sizing: border-box;padding: 7px 20px;color: #000;font-size: 17px;border-radius: 3px 3px 0 0;font-family: 'proxima_novasemibold';}
+
+.faqOne{overflow: hidden;clear: both;display: none;background: #efefef;border-bottom: 1px solid #ccc}
+.faqOne .more-list{box-sizing: border-box;padding: 20px;overflow: hidden;width: 1050px;margin: 0 auto;text-align: left;}
+.faqOne .more-list li {margin-bottom: 25px;}
+.faqOne .more-list h3{text-align: left;font-size: 22px;margin-bottom: 5px}
+.faqOne .more-list p{font-size: 16px;line-height: 26px;}
+.more-list ol li{margin-bottom: 10px;font-size: 17px;list-style-type: disc;list-style-position: inside;}
+.contact_error_down{position: absolute;bottom: -13px;left: 0;color:#d05656}
+
+@media  (min-width:801px) and (max-width:1024px){
+	    .mobile-app .mobile-app-signup .txtemai {width: 300px;}
+		.mobile-app .mobile-app-signup .txtnam{width: 300px;}
+		.mobile-app .mobile-app-signup .txtms {width: 666px;}
+		.mobile-app .mobile-app-signup{width:667px}
+		.mobile-app h3 span {font-size: 22px;margin-top: 10px;}
+		
+		.technologies-wrap h3 span {display: block;margin: 10px auto 0;width: 100%;font-size: 16px;line-height: 26px;color: #000;padding: 0 10px;box-sizing: border-box;}
+		.technologies-wrap .l-content {width: 100%;float: none;margin-top: 0;padding: 10px;box-sizing: border-box; height: auto !important;}
+		
+		.mobile-app .metrics-wrap .wrapper{width: 640px;}
+		.metrics-wrap .metrics li {float: left;width: 33%;margin: 0;overflow: hidden;padding: 5px;box-sizing: border-box;margin-bottom: 15px;}
+		.metrics-wrap .metrics i {display: block;width: 44px;height: 45px;margin:0 auto 20px;float: none;}
+		.metrics-wrap .metrics h4{font-size: 31px;margin: 0 auto;}
+		.metrics .metrics-num {float: left;width: auto;text-align: center;margin-right: 10px;}
+		.metrics-wrap .metrics .sec,
+		.metrics-wrap .metrics .ready{margin: 0 auto;float: none;}
+		.metrics-wrap .metrics .res-width{width: 50%;}
+		.metrics-wrap .metrics .mill{width: 113px;}
+		
+		.apps .app-metrics .metrics{width: 640px;}
+		.app-metrics .metrics li {float: left;width: 33%;margin: 0;overflow: hidden;padding: 5px;box-sizing: border-box;}
+		.app-metrics .metrics i{display: block;width: 51px;height: 48px;margin: 0 auto 10px;float: none;}
+		.app-metrics .metrics h4{font-size: 31px;margin: 0;width:auto;float: none;}
+		.app-metrics .metrics .metrics-num {float: none;width: auto;text-align: center;margin-right: 10px;}
+		.app-metrics .metrics .res-width{width: 50%;}
+		
+		.whats-new {width: 744px;margin: 0 auto;}
+	    .whats-new ul li {float: left;margin: 0 5px;width: 238px;position: relative;}
+	    .whats-new ul img {width: 238px !important;}
+	    .whats-new ul a{line-height: 20px;font-size: 16px;}
+		
+		.signup-wrap .signup .txtname,
+		.signup-wrap .signup .txtemail {width:250px;float: none;margin: 0 auto;display: block;margin-top:5px;}
+	    .signup-wrap .signup{width:700px;margin:0 auto;}
+	    .signup-wrap .signup .txtmsg {width:350px;display: block;}
+	    .signup-wrap .signup .create {margin-top:0;width: 100%;}
+	    .signup-wrap .signup .submitbtn {float:none;margin:0;margin:15px auto 0;display: block;}
+	    .signup .error {top: 52px;}
+	    
+	    .contus-news {width:auto;overflow: hidden;padding: 0 20px;margin: 40px 0;box-sizing: border-box;}
+		.contus-news .news-list {overflow: hidden;width: 100%;text-align: center;}
+		.contus-news .news-list li {margin: 15px 0;width: 20%;height: 20px;text-align: center;}
+		
+		.winning {width: 722px;margin: 0 auto;}
+		.winning li {width: 171px;}
+	    .winning-wrap .main-img{margin: 77px 15px;}
+	    
+	    .happy-clients {width: 732px;margin: 0 auto;}
+	    .happy-clients ul li {margin: 10px auto;float:left;padding: 20px 42px;width: 244px;box-sizing: border-box;}
+	    .happy-clients ul li:first-child{display:none;}
+	    .view-client-list .mask{width: 204px;}
+	    
+	    .digital{margin: 0}
+		.digital-development .digital-steps i{display: none}
+		.digital-steps {width: 620px;margin: 17px auto 0;position: relative;}
+		.digital-steps .digital-design,
+		.digital-steps .digital-develop,
+		.digital-steps .digital-delivery{margin-right: 15px;}
+		.digital-steps .right-content {float: right;width: 430px;margin-top: 40px;}
+		.digital .light {display: block;width: 90%;margin: 0 auto;font-size: 19px;line-height: 26px;text-align: center;}
+		.digital-development {height: 300px;}
+		.digital-development .slidesjs-container, 
+		.digital-development .slidesjs-control {height: 300px !important;}
+		.digital-steps .right-content h4{font-size: 22px;}
+		
+		.mobile-page-links{width: 100%;padding: 20px;box-sizing:border-box;}
+		.mobile-page-links li a {font-size: 19px;color: #343232;font-family: 'proxima_nova_rgregular';display: block;}
+		.mobile-page-links li i {vertical-align: middle;margin-right: 10px;display: block;width: 3px;margin: 0 auto;}
+	
+		.more-content {width: 100%;}
+		.more{margin-left: 20px;}
+		.faqOne .more-list {width: 80%;}
+		.tabs-list, .tabs-bg{display: none}	    
+}
+@media screen and (max-width:780px){
+	.mobile-app_r .mobile-app-signup .li-email{float: left}
+	.whats-new .bottom{right: 13%;}
+	.recaptcha-top, .recaptcha-down {float: none;margin: 7px auto;width: 305px;}
+	.mobile-app_r .mobile-app-signup .submitbtn {float: none;}
+}
+@media only screen (min-width:768px){
+		 .winning {width: 722px;margin: 0 auto;}
+		 .winning li {width: 171px;}
+		 .winning-wrap .main-img{margin: 77px 15px;}
+		 .winning-wrap{display: block;}
+}
+@media (min-width:679px) and (max-width:800px){
+	    .winning-wrap{display: none}
+	    
+	    .mobile-app .metrics-wrap .wrapper{width: 640px;}
+		.metrics-wrap .metrics li {float: left;width: 33%;margin: 0;overflow: hidden;padding: 5px;box-sizing: border-box;margin-bottom: 15px;}
+		.metrics-wrap .metrics i {display: block;width: 44px;height: 45px;margin:0 auto 20px;float: none;}
+		.metrics-wrap .metrics h4{font-size: 31px;margin: 0 auto;}
+		.metrics-wrap .metrics .metrics-num {float: left;width: auto;text-align: center;margin-right: 10px;}
+		.metrics-wrap .metrics .sec,
+		.metrics-wrap .metrics .ready,
+		.metrics-wrap .metrics .mill{margin: 0 auto;float: none;}
+		.metrics-wrap .metrics .res-width{width: 50%;}
+		.metrics-wrap .metrics .mill {width: 125px;}
+		
+		.apps .app-metrics .metrics{width: 640px;}
+		.app-metrics .metrics li {float: left;width: 33%;margin: 0;overflow: hidden;padding: 5px;box-sizing: border-box;}
+	    .app-metrics .metrics i{display: block;width: 51px;height: 48px;margin: 0 auto 10px;float: none;}
+		.app-metrics .metrics h4{font-size: 31px;margin: 0;width:auto;float: none;}
+		.app-metrics .metrics .metrics-num {float: none;width: auto;text-align: center;margin-right: 10px;}
+		.app-metrics .metrics .res-width{width: 50%;}
+	    
+	    .technologies-wrap h3 span {display: block;margin: 10px auto 0;width: 100%;font-size: 16px;line-height: 26px;color: #000;padding: 0 10px;box-sizing: border-box;}
+		.technologies-wrap .l-content {width: 100%;float: none;margin-top: 0;padding: 10px;box-sizing: border-box;}
+		
+		.mobile-banners .bigcont {width: 100%;font-size: 43px;color: #FFF;font-family: 'proxima_novasemibold';text-align: center;position: absolute;top: 32%;font-weight: normal;line-height: 46px;text-transform: capitalize;text-shadow: 0 0 12px #000;padding: 0 20px;left: 0;box-sizing: border-box;}
+		
+	    .whats-new {width: 643px;margin: 0 auto;}
+	    .whats-new ul li {float: left;margin: 0 5px;width: 200px;position: relative;}
+	    .whats-new ul img {width: 200px !important;}
+	    .whats-new ul a{line-height: 20px;font-size: 16px;}
+	    
+	    .happy-clients {width: 544px;margin: 0 auto;}
+	    .happy-clients ul li {margin: 10px auto;float: left;}
+	    
+	    .signup-wrap .signup .txtname,
+	    .signup-wrap .signup .txtemail {width:480px;float: none;margin: 0 auto;display: block;margin-top: 15px;}
+		.signup-wrap .signup{width:640px;margin-bottom: 0;}
+		.signup-wrap {padding:30px 10px;}
+		.signup-wrap .signup li {margin: 0}
+		.signup-wrap .signup .txtmsg {margin:15px auto;width:480px;display: block;}
+		.signup-wrap .signup .submitbtn {float:none;margin:0;margin:5px auto;display: block;}
+		.signup-wrap .signup .up {margin-top:0;width: 100%;}
+		.signup-wrap .signup .mailfunction{width:508px;margin: 0 auto;} 
+		
+		.mobile-app_r {padding:30px 10px;}
+		.mobile-app .mobile-app-signup{width:640px}
+        .mobile-app h3 span {font-size: 22px;margin-top: 10px;}
+        .mobile-app .mobile-app-signup .txtnam,
+        .mobile-app .mobile-app-signup .txtemai,
+        .mobile-app .mobile-app-signup .txtms {width:480px;float: none;margin: 0 auto 5px;display: block}
+        .mobile-app .mobile-app-signup li {margin-bottom: 15px;}
+        .mobile-app .mobile-app-signup .mailfunction{width:479px;margin: 0 auto;}
+        .technologies-wrap .technologies-wrap-content{width: 100%}
+        
+        .contus-news {box-sizing: border-box;width:auto;overflow: hidden;padding: 0 20px;margin: 40px 0;}
+		.contus-news .news-list {overflow: hidden;width: 100%;text-align: center;}
+		.contus-news .news-list li {margin: 15px 0;width: 30%;height: 20px;text-align: center;}
+		
+		.digital{margin: 0}
+		.digital-development .digital-steps i{display: none}
+		.digital-steps {width: 620px;margin: 17px auto 0;position: relative;}
+		.digital-steps .digital-design,
+		.digital-steps .digital-develop,
+		.digital-steps .digital-delivery{margin-right: 15px;}
+		.digital-steps .right-content {float: right;width: 430px;margin-top: 40px;}
+		.digital .light {display: block;width: 90%;margin: 0 auto;font-size: 19px;line-height: 26px;text-align: center;}
+		.digital-development {height: 300px;}
+		.digital-development .slidesjs-container, 
+		.digital-development .slidesjs-control {height: 300px !important;}
+		.digital-steps .right-content h4{font-size: 22px;}
+		
+		.mobile-page-links{width: 100%;padding: 20px;box-sizing:border-box;}
+		.mobile-page-links li a {font-size: 17px;color: #343232;font-family: 'proxima_nova_rgregular';display: block;}
+		.mobile-page-links li i {vertical-align: middle;margin-right: 10px;width: 3px;margin: 0 auto;}
+		
+		.more-content {width: 100%;}
+		.more{margin-left: 20px;}
+		.faqOne .more-list {width: 80%;}
+		.tabs-list, .tabs-bg{display: none}		
+}
+@media (min-width:481px) and (max-width:678px){	
+	 	.mobile-app .metrics-wrap .metrics{width: 440px;}
+		.metrics-wrap .metrics li {float: left;width: 48%;margin: 0;overflow: hidden;padding: 5px;box-sizing: border-box;}
+		.metrics li i {display: block;width: 44px;height: 45px;margin:0 auto 20px;float: none;}
+		.metrics-wrap .metrics h4{font-size: 31px;margin: 0;width:auto;float: left;}
+		.metrics-wrap .metrics .metrics-num {float: left;width: auto;text-align: center;margin-right: 10px;}
+		.metrics-wrap .metrics .sec,
+		.metrics-wrap .metrics .ready,
+		.metrics-wrap .metrics .mill{margin: 0 auto;float: none;width: 126px;}
+		.metrics-wrap .metrics .ready{width: 190px;}
+		.metrics-wrap .metrics .sec{width: 160px;}		
+		
+		.apps .app-metrics .metrics{width: 440px;}
+		.app-metrics .metrics li {float: left;width: 48%;margin: 0;overflow: hidden;padding: 5px;box-sizing: border-box;}
+		.app-metrics .metrics i{display: block;width: 51px;height: 48px;margin: 0 auto 10px;float: none;}
+		.app-metrics .metrics h4{font-size: 31px;margin: 0;width:auto;float: none;}
+		.app-metrics .metrics .metrics-num {float: none;width: auto;text-align: center;margin-right: 10px;}
+				
+		.winning-wrap{display: none}
+		.technologies-wrap h3 span {display: block;margin: 10px auto 0;width: 100%;font-size: 16px;line-height: 26px;color: #000;padding: 0 10px;box-sizing: border-box;}
+		.technologies-wrap .l-content {width: 100%;float: none;margin-top: 0;padding: 10px;box-sizing: border-box;}
+		
+		.mobile-banners h1 {font-size: 25px;top: 18%;line-height: 31px;}
+		.mobile-banners h1 span {font-size: 16px;line-height: 17px;margin-top: 20px;}
+		.mobile-banners .bigcont {width:100%;left:0;top:18%;line-height:30px;}
+		.mobile-banners .slidesjs-container,
+        .mobile-banners .slidesjs-control{height: 450px !important}
+        .top-banners{height:450px}
+        .mobile-banners .slidesjs-pagination{bottom: -2px;}
+        .mobile-banners .slidesjs-next,
+        .mobile-banners .slidesjs-previous{display: none !important}
+		
+		.contus-news {width:auto;overflow: hidden;padding: 0 20px;margin: 30px 0;box-sizing: border-box;}
+		.contus-news .news-list {overflow: hidden;width: 100%;text-align: center;}
+		.contus-news .news-list li {margin: 15px 0;width: 49%;height: 20px;text-align: center;}
+		
+		.whats-new ul li {margin: 0 0 25px;width: auto;}
+		.whats-new ul img{width: 100%}
+		.whats-new {width: 400px;}
+		
+		.digital{margin: 0}
+		.digital-development .digital-steps i{display: none}
+		.digital-steps {width: 450px;margin: 17px auto 0;position: relative;}
+		.digital-steps .digital-design,
+		.digital-steps .digital-develop,
+		.digital-steps .digital-delivery{margin-right: 15px;}
+		.digital-steps .right-content {float: right;width: 260px;}
+		.digital .light {display: block;width: 90%;margin: 0 auto;font-size: 17px;line-height: 23px;text-align: center;}
+		.digital-development {height: 300px;}
+		.digital-development .slidesjs-container, 
+		.digital-development .slidesjs-control {height: 300px !important;}
+		.digital-steps .right-content h4{font-size: 22px;}
+		
+		.signup .error {top: 53px;}
+		.signup-wrap .signup .mailfunction{width: 422px;margin: 0 auto;}
+		.signup-wrap .signup .txtname,
+		.signup-wrap .signup .txtemail {width: 394px;float: none;margin: 0 auto;display: block;margin-top: 15px;}
+	    .signup-wrap .signup{width:457px;margin-bottom: 0;}
+	    .signup-wrap .signup li {display: block;margin: 0;}
+	    .signup-wrap .signup .txtmsg {margin:15px auto;width:394px;display: block;}
+	    .signup-wrap .signup .submitbtn {float:none;margin:0 auto;display: block;}
+	    .signup-wrap .signup .up {margin-top:0;width: 100%;}
+	    .signup-wrap h3{font-size: 22px ;padding: 0 10px;} 
+		
+		.mobile-app_r {padding: 30px 10px;}
+		.mobile-app_r .mobile-app-signup{width:454px}
+		.mobile-app_r h3{font-size: 25px ;}
+		.mobile-app_r h3 span {font-size: 16px;}
+		.mobile-app_r .mobile-app-signup li {margin-bottom: 15px;}
+		.mobile-app_r .mobile-app-signup .txtnam,
+		.mobile-app_r .mobile-app-signup .txtemai,
+		.mobile-app_r .mobile-app-signup .txtms {width:394px;float: none;margin: 0 auto;display: block}
+		.mobile-app_r .mobile-app-signup .mailfunction{width: 422px;margin: 0 auto;} 
+		
+		.contus-news h3 span,
+		.success-stories h3 span {font-size: 19px;color: #333333;line-height: 22px;display: block;margin-top: 9px;}
+		
+		.happy-clients{width: 100%}
+		.happy-clients-wrap{padding:20px 0;}
+		.happy-clients ul li {margin: 10px auto;float: none;display: none;}
+		.happy-clients ul li:first-child{display: block}
+		
+		.mobile-page-links{width: 100%;padding: 20px;box-sizing:border-box;}
+		.mobile-page-links li{width: 100%;margin-bottom: 20px;}
+		
+		.more-content {width: 100%;}
+		.more{margin-left: 20px;}
+		.faqOne .more-list {width: 80%;}
+		.top-banners .livechat{display: none;}
+		.tabs-list, .tabs-bg{display: none}
+		
+		.recaptcha-top{float: none;}
+		.mailfunction .mid{text-align: center;width:auto}
+		.mobile-app .mobile-app-signup .submitbtn{float: none;margin: 10px auto;}
+		.technologies-wrap .technologies-wrap-content{width: 100%}
+}
+@media screen and (max-width:480px){
+		.mobile-app .metrics-wrap .wrapper{width: 300px;}
+		.metrics-wrap .metrics li {float: left;width: 100%;margin: 0;overflow: hidden;padding: 15px;box-sizing: border-box;}
+		.metrics-wrap .metrics i {display: block;width: 44px;height: 45px;margin: 0 7px 0 0;float: left;}
+		.metrics-wrap .metrics h4{font-size: 31px;margin: 0;width:auto;float: left;}
+		.metrics-wrap .metrics .metrics-num {float: left;width:93px;text-align: center;}
+		.metrics-wrap .metrics .sec,
+		.metrics-wrap .metrics .ready,
+		.metrics-wrap .metrics .mill{width: auto;}
+		
+		.apps .app-metrics .metrics{width: 300px;}
+		.app-metrics .metrics li {float: left;width: 100%;margin: 0;overflow: hidden;padding: 15px;box-sizing: border-box;}
+		.app-metrics .metrics i{display: block;width: 51px;height: 48px;margin: 0 7px 0 0;float: left;}
+		.app-metrics .metrics h4{font-size: 31px;margin: 0;width:auto;float: left;}
+		.app-metrics .metrics .metrics-num {float: left;width: 100px;text-align: center;}
+		
+		.mobile-banners .bigcont {width:100%;left:0;top:18%;line-height:31px;}
+		
+		.mobile-banners h1 {font-size: 25px;top: 18%;line-height: 31px;}
+		.mobile-banners h1 span {font-size: 16px;line-height: 17px;margin-top: 20px;}
+		.mobile-banners .slidesjs-container,
+        .mobile-banners .slidesjs-control{height: 450px !important}
+        .top-banners{height:450px;}
+        .mobile-banners .slidesjs-pagination{bottom: -2px;}
+        .mobile-banners .slidesjs-next,
+        .mobile-banners .slidesjs-previous{display: none !important}
+	    
+	    .technologies-wrap h3 span {display: block;margin: 10px auto 0;width: 100%;font-size: 16px;line-height: 26px;color: #000;padding: 0 10px;box-sizing: border-box;}
+	    
+	    .winning-wrap{display: none}
+	    
+		.whats-new ul li {margin: 0;width: auto;display: none;}
+		.whats-new ul li:first-child{display: block}
+		.whats-new ul img{width: 100% !important;}
+		.whats-new {width: 260px;}
+		
+		.happy-clients{width: 100%}
+		.happy-clients-wrap{padding:20px 0;}
+		.happy-clients h3{width: 190px;margin:0 auto}
+		.happy-clients ul li {margin: 10px auto;float: none;display: none;}
+		.happy-clients li:first-child{display: block}
+		
+		.technologies-wrap img{display: none;}
+		.technologies-wrap .l-content {width: 100%;float: none;margin-top: 0;padding: 10px;box-sizing: border-box;}
+		
+		.contus-news {box-sizing: border-box;width:auto;overflow: hidden;padding: 0 20px;margin: 12px 0;}
+		.contus-news .news-list {overflow: hidden;width: 100%;margin: 0 auto;}
+		.contus-news .news-list li {float: none;margin: 30px 0;width: 100%;height: 20px;text-align: center;}
+		.contus-news h3{margin-bottom: -15px ;}
+		
+		.signup-wrap .signup{width:281px;margin-bottom: 0;}
+		.signup-wrap .signup li {display: block;}
+		.signup-wrap .signup .txtmsg {margin-left: 0;margin-top:17px;width: 253px;}
+		.signup-wrap .signup .submitbtn {float:none;margin:0;margin:20px auto;display: block;}
+		.signup-wrap .signup .up {margin: 0 auto;display: block;width: 100%;}
+		.signup-wrap h3{font-size: 22px ;padding: 0 10px;}
+			
+		.mobile-app_r .mobile-app-signup{width: 276px;margin: 0 auto;}
+		.mobile-app_r h3{font-size: 22px ;}
+		.mobile-app_r {padding: 30px 10px;}
+		.mobile-app_r h3 span {font-size: 16px;}
+		.technologies-wrap .technologies-wrap-content {width: 100%;}
+		.mobile-app_r .mobile-app-signup .txtnam,
+		.mobile-app_r .mobile-app-signup .txtemai,
+		.mobile-app_r .mobile-app-signup .txtms {width: 250px;float: none;margin: 0 auto;display: block;margin-bottom:13px;}
+		
+		.digital-development .digital-steps span,
+		.digital .digital-development .light,
+		.digital-development .digital-steps i{display: none}
+		.digital {padding: 0;position: relative;margin: 30px 0;}
+		.digital .light {display: block;width: 90%;margin: 0 auto;font-size: 17px;line-height: 21px;text-align: center;}
+		.digital-steps {width: auto;margin: 0 20px;position: relative;box-sizing: border-box;text-align: center;}
+		.digital-steps .right-content{width: auto;float:none;}
+		.digital-development {height: 230px;}
+		.digital-development .slidesjs-container, 
+		.digital-development .slidesjs-control {height: 230px !important;}
+		.digital-steps .right-content h4{font-size: 18px;}
+		
+		.contus-news h3 span,
+		.success-stories h3 span {font-size: 17px;color: #333333;line-height: 20px;display: block;margin-top: 9px;}
+		
+		.mobile-page-links{width: 100%;padding: 20px;box-sizing:border-box;}
+		.mobile-page-links li{width: 100%;margin-bottom: 20px;}
+		
+		.more-content {width: 100%;}
+		.more{margin-left: 20px;}
+		.faqOne .more-list {width: 80%;}
+		.top-banners .livechat{display: none;}
+		.tabs-list, .tabs-bg{display: none}
+		.mobile-page-links li a{font-size: 19px;}
+		
+		.recaptcha-top{float: none;}
+		.mailfunction .mid{text-align: center;width:auto}
+		.mobile-app_r .mobile-app-signup .submitbtn{float: none;margin: 10px auto;}
+}
+@media screen and (max-width:390px){
+    .recaptcha-down {margin-left: -14px;}
+}

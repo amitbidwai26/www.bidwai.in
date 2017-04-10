@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Terms and Conditions of Bidwai Technologies</title>
+        <meta name="description" content="By using Bidwai Technologies product and services you agree to be legally bound by these terms, which shall take effect immediately on your first use of Bidwai Technologies product and services">
+        <meta name="keywords" content="Bidwai Technologies Terms and Conditions,  web Development, Mobile app development, CMS web development">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--Styles-->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="new_css\header_footer.css" rel="stylesheet" media="screen">
+		<link href="./new_css/header_footer.css" rel="stylesheet" media="screen">
+        <style>
+        	.header-bg {background: #000;height: 80px;}
+        	.wrapper-content{width: 1090px;margin: 0 auto;}
+            #terms-and-conditions{overflow: hidden;padding: 20px;}
+            #terms-and-conditions h2{border-bottom: 1px solid #eee;padding-bottom: 10px;margin-top: 0px;}
+            #terms-and-conditions p{padding-bottom: 13px;font-size: 16px;line-height: 27px;}
+            #terms-and-conditions strong{padding-bottom:5px;display: block;font-size: 18px;font-weight: normal;}
+            #terms-and-conditionsul{margin-bottom: 10px;}
+            #terms-and-conditions ul li{list-style-type: disc;font-size: 16px;list-style-position: outside;padding-bottom: 10px;margin-left: 16px;}
+            #terms-and-conditions ul li ol li{list-style-type:circle;}
+            #footer .footer-wrap .footer-top {margin: 0;}
+            .dropdown-menu {border: 1px solid #ccc\9;}
+            @media screen and (max-width:1600px){
+            	.header-bg {display:block}
+            }
+            @media screen and (max-width:1100px){
+           		.wrapper-content{width:90%}
+           		#footer .footer-wrap {width: 90%;box-sizing: border-box;}
+           		#footer .footer-wrap .tabone, #footer .footer-wrap .tabtwo{width: 20%}
+            }
+            @media screen and (max-width:1024px){
+            	.header-bg {display:none}
+            }
+        </style>
+        <!--Styles ends-->
+    </head>
+    <body>
+
+           <script src="./js/common_functions.js" type="text/javascript"></script>
+<script>
+//Header Fixed
+
+(function($){
+	$.fn.tmStickUp=function(options){ 
+		
+		var getOptions = {
+			corectionValue: 0
+		}
+		$.extend(getOptions, options); 
+
+		var
+			_this = $(this)
+		,	_window = $(window)
+		,	_document = $(document)
+		,	thisOffsetTop = 0
+		,	thisOuterHeight = 0
+		,	thisMarginTop = 0
+		,	documentScroll = 0
+		,	pseudoBlock
+		,	lastScrollValue = 0
+		,	scrollDir = ''
+		,	tmpScrolled
+		,	gridWidth = 0
+		,	tmpTop = 0
+		;
+
+		init();
+		function init(){
+			parentContainer = _this.parent();
+			thisOffsetTop = parseInt(_this.offset().top);
+			thisMarginTop = parseInt(_this.css("margin-top"));
+			thisOuterHeight = parseInt(_this.outerHeight(true));
+			gridWidth = parseInt($('.container').width());
+
+			$('<div class="pseudoStickyBlock"></div>').insertAfter(_this);
+			pseudoBlock = $('.pseudoStickyBlock');
+			pseudoBlock.css({"position":"absolute", "display":"block"});
+
+			_this.on("rePosition",
+				function(e,d){
+					tmpTop = d;
+					_document.trigger('scroll');
+				}
+			)
+
+			addEventsFunction();
+		}//end init
+
+		function addEventsFunction(){
+			_document.on('scroll', function() {
+
+				tmpScrolled = $(this).scrollTop();
+					if (tmpScrolled > lastScrollValue){
+						scrollDir = 'down';
+					} else {
+						scrollDir = 'up';
+					}
+				lastScrollValue = tmpScrolled;
+
+				documentScroll = parseInt(_document.scrollTop());
+				if(thisOffsetTop-thisMarginTop < documentScroll){
+					_this.addClass('isStuck');
+					_this.css({position:"fixed",top:tmpTop, zIndex:9999999999, left:0, right:0, margin:"0 auto", padding:"0"})
+					pseudoBlock.css({"height":thisOuterHeight});
+				}else{
+					_this.removeClass('isStuck');
+					_this.css({position:"absolute", top: 0});
+					pseudoBlock.css({"height":0});
+				}
+				
+			}).trigger('scroll');
+		}
+	}//end tmStickUp function
+})(jQuery)
+$(document).ready(function(){  
+  $('#header_container').tmStickUp({});
+});
+</script>
+
+
+<!-- Header starts -->
+            <header>
+				  <div class="span12 header_container" id="header_container"> 
+				     <h6><a href="index.html" title="Bidwai Technologies" class="logo headerfooter-sprite">&nbsp;</a></h6>
+				     <a href="javascript:void(0)" id="pull" class="pull headerfooter-sprite"></a>
+				     <nav>
+				         <div id="nav" class="nav">
+				            <ul class="clearfix">
+				            	<li class="dropdown home_ic">
+			                     <a href="index.html" class="companymenu dropdown-toggle brand home headerfooter-sprite" title="Home"></a>
+		                        </li>
+				                <li class="dropdown">
+			                     <a href="overview.html" id="companymenu1" class="companymenu dropdown-toggle brand" title="Company">Company</a>
+		                        </li>
+				                <li class="dropdown">
+			                     <a id="companymenu2" class="companymenu dropdown-toggle brand" title="Services">Services <b class="caret headerfooter-sprite"></b><i class="caret-desk"></i></a>
+		                          <ul class="dropdown-menu services-menu" id="menu2">
+		                            <li><a href="mobile-application-development.html" title="Mobile App Development">Mobile App Development</a></li>
+									<li><a href="custom-software-development.html" title="Custom Software Development">Custom Software Development</a></li>
+		                            <li><a href="ecommerce-web-development.html" title="eCommerce Development">eCommerce Development</a></li>
+		                            <li><a href="web-development.html" class="border-none" title="Web Application Development">Web Application Development</a></li>
+		                            <li><a href="cloud-solutions.html" class="border-none" title="Cloud Solutions">Cloud Solutions</a></li>
+		                          </ul>
+				                 </li>
+				                <li class="dropdown">
+				                   <a class="brand" href="careers.html" title="Careers">Careers</a>
+				                </li>
+				                <li class="dropdown">
+			                     <a href="contact-info.html" class="brand" id="companymenu4" title="Contact Us">Contact Us </a>
+		                        </li>
+							</ul>
+							</div>
+				         </nav>
+				   </div>
+				</header>
+				
+				
+				
+				<div id="pageclick">				
+<!--
+//-->		           <div class="header-bg"></div><!--header-bg-->
+            <div class="wrapper-content clearfix">
+                <div id="terms-and-conditions">
+                    <h2>Terms and Conditions</h2>
+                    <p>The website www.bidwai.in and all of its contents and services is powered by Bidwai Technologies. In whole of the below text, the term 'You', 'Client' or 'User' all denotes the user or client who access the website (in any way) or uses the services of it in any level.</p>
+                    <p>The following Terms and Conditions apply to and govern the usage of the whole of www.bidwai.in website and all of its content, services and products available through the website, including, but not limited to, the client area (collectively referred to as the Website). The 'Terms and Conditions' section is written by us with the motive of providing maximum possible clarity for points of understanding between the website's firm and the user of the website. However, we in no way provide assurance that this section would consist of answers and explanations for all questions in regards to Terms and Conditions. In case you don't find answer for a question or demand to have more clarity on a particular point, you shall email to us.</p>
+                    <ul class="tandc-container">
+                        <li><p>By accepting to access or use any part of this website, you are assumed to have agreed to be bound by the Terms and Conditions of this Agreement. In case you do not agree to all the Terms and Conditions of this agreement, then you shall not access the Website or use any of its services.</p></li>
+                        <li><p>The Website is suitable only to individuals who are at least 13 years old.</p></li>
+                        <li><p>Client Area Account. You are solely responsible for maintaining the security of your client area account and for any kind of activity that occurs within the account. You are expected to notify Bidwai Technologies immediately in case of any unauthorized uses of your account or any other breaches of security. Bidwai Technologies will not be liable for any acts or omissions by You, including any damages of any kind incurred as a result of such acts or omissions.</p></li>
+                        <li style="list-style-type:none;">
+                            <ol>
+                                <li style="list-style-type:none;"><strong>Post Sales Support</strong></li>
+                                <li>On an occasion if the client has opened and meddled with the codes, we will take no responsibility to give technical help in any magnitude, in case any trouble shoots up.</li>
+                                <li>There is no guarantee that all product updates will be available for free of cost. Bidwai Technologies reserves the right to charge or not to charge for the product updates it releases according to the nature of the update.</li>
+                                <li>The product is sold in "as is basis" with functions/features as specified in the website and any claim stating that features/function missing or not "as expected" by the buyer or not like how it is found in other similar products/competitors will not be taken into consideration, and Bidwai Technologies in no way will be liable for such claims.</li>
+                                <li>All customization services of any magnitude will be charged accordingly and the client in no way possess the right to claim for free customization services citing to the payment he has done initially for the actual product or for a previously agreed customization task/project/functionality.</li>
+                                <li>In case of any rude or harsh behavior of a client towards any Support Executive will lead to termination of post sales services for the particular customer. Customers are expected to communicate to the Support Executive in the best dignified manner and not use any form of inappropriate communication (includes profanity).</li>
+                                <li>From the day of installation, the client will receive 60 days of free post sales support. From the 61st day, the client will be charged for his support necessities.</li>
+                                <li>The support hours are between 10 AM to 6 PM IST (MON - FRI).</li>
+							</ol>
+                        </li>
+                        <li><p>Responsibility of Website Visitors. By operating the Website, Bidwai Technologies does not represent or imply that it endorses any or all of the contributed content, or that it believes such material to be accurate, useful or non-harmful. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. In spite of its ethical measures, the Website might contain content that is offensive, indecent, or otherwise objectionable, as well as content containing technical inaccuracies, typographical mistakes, and other errors. Bidwai Technologies disclaims any responsibility for any harm resulting from the use by visitors of the Website.</p></li>
+                        <li><p>Changes. Bidwai Technologies reserves the right, at its sole discretion, to modify or replace any part of this Agreement. It is your responsibility to check this Agreement periodically for changes. Your continued use of or access to the Website following the posting of any changes to this Agreement constitutes acceptance of those changes. Bidwai Technologies may also, in the future, offer new services and/or features through the Website (including, the release of new tools and resources). Such new features and/or services shall be subject to the terms and conditions of this Agreement.</p></li>
+                        <li><p>Termination. Bidwai Technologies may terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately.</p></li>
+                        <li><p>Disclaimer of Warranties. The Website is provided "as is". Bidwai Technologies and its suppliers and licensors hereby disclaim all warranties of any kind, express or implied, including, without limitation, the warranties of merchantability, fitness for a particular purpose and non-infringement. Neither Bidwai Technologies nor its suppliers and licensors, makes any warranty that the Website will be error free or that access thereto will be continuous or uninterrupted. You understand that you download from, or otherwise obtain content or services through, the Website at your own discretion and risk.</p></li>
+                        <li><p>Limitation of Liability. In no event will Bidwai Technologies, or its suppliers or licensors, be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory for: (i) any special, incidental or consequential damages; (ii) the cost of procurement or substitute products or services; (iii) for interruption of use or loss or corruption of data; or (iv) for any amounts that exceed the fees paid by you to Bidwai Technologies under this agreement during the twelve (12) month period prior to the cause of action. Bidwai Technologies shall have no liability for any failure or delay due to matters beyond their reasonable control. The foregoing shall not apply to the extent prohibited by applicable law.</p></li>
+                        <li><p>General Representation and Warranty. You represent and warrant that (i) your use of the Website will be in strict accordance with the Bidwai Technologies Privacy Policy, with this Agreement and with all applicable laws and regulations (including without limitation any local laws or regulations in your country, state, city, or other governmental area, regarding online conduct and acceptable content, and including all applicable laws regarding the transmission of technical data exported from the United States or the country in which you reside) and (ii) your use of the Website will not infringe or misappropriate the intellectual property rights of any third party.</p></li>
+                        <li><p>Indemnification. You agree to indemnify and hold harmless Bidwai Technologies, its contractors, and its licensors, and their respective directors, officers, employees and agents from and against any and all claims and expenses, including attorneys' fees, arising out of your use of the Website, including but not limited to your violation of this Agreement.</p></li>
+                    </ul>
+                    <strong class="semi">Bidwai Technologies End User License Agreement</strong>
+                    <p>Hereafter, "Product" or "software" refers to the extension or other scripts that you buy, "Licensor" refers to Bidwai Technologies, "License" refers to this document, and "Licensee" refers to the party that received this license after having downloaded the respective product and paying the required fee as determined by the Licensor. This License governs use of the accompanying product, and your purchase and use of the product constitutes your acceptance of this License and all of its contents and stipulations. THIS PRODUCT IS NEITHER A FREEWARE NOR SHAREWARE. IT IS A COMMERCIALLY LICENSED PRODUCT. IT MUST BE PURCHASED FROM THE LICENSOR FOR USE BY ANY INDIVIDUAL OR PARTY, AND IS SUBJECT TO THE FOLLOWING TERMS:</p>
+                    <strong class="semi">Refusal Of Service And Business Relations:</strong>
+                    <p>Bidwai Technologies reserves the right to cease support and/or terminate business relations in instances of libel, defamation, abuse, or harassment. Bidwai Technologies will terminate all support and business relations in instances of software piracy. This includes, but is not limited to "cracked", "nulled", or otherwise unlicensed versions of Bidwai Technologies scripts or plugins.</p>
+                    <strong class="semi">Illegal Distribution:</strong>
+                    <p>If our product is found to be stolen, distributed without permission, illegally obtained, or if the users of this software are found to be breaching any of the terms herein, the Licensor has the unconditional right to prosecute them to the fullest extent of the law.</p>
+                    <strong class="semi">Liabilities:</strong>
+                    <p>The Licensor, its management, or any of its employees, associates, or partners cannot be held liable for any damages that this Software may cause. As the Licensee and user of the Software, you agree to accept full liability for any damages, risk, and losses involved with or incurred by the use of the Software. THE SERVICES OR SOFTWARE AND ALL ASSOCIATED MATERIALS AND SERVICES ARE PROVIDED SOLELY ON AN "AS-IS" BASIS WITH ABSOLUTELY NO WARRANTY OF FITNESS OR MERCHANTABILITY, EXPLICIT OR IMPLIED. Licensor shall not be responsible for, and shall not pay, any amount of incidental, consequential or other indirect damages, whether based on lost revenue or otherwise, regardless of whether Licensor was advised of the possibility of such losses in advance. In no event shall Licensor's liability hereunder exceed the amount of license fees paid by Licensee, regardless of whether Licensee's claim is based on contract, tort, strict liability, product liability or otherwise. If any term of this Agreement is held by a court of competent jurisdiction to be invalid or unenforceable, then this Agreement, including all of the remaining terms, will remain in full force and effect as if such invalid or unenforceable term had never been included. This license must be left completely intact when this software is used, or copied for approved multi-user use. The Licensor reserves all rights not expressly granted to you in this license.</p>
+				</div>
+            </div>
+                    <!-- footer starts -->
+     
+     </div><!-- page onclick header close -->
+	 			<div id="footer" class="clearfix footer">
+			 	<div class="footer-wrap">
+			 		<div class="footer-top clearfix">
+						<div class="tabone">
+				        </div>
+				        <div class="tabtwo">
+				            <h4 class="first_link_footer">Talk to Us</h4>
+			                <ul class="nav-collapse_footertab2 collapse">
+			                    <li><p><b class="phone-ic headerfooter-sprite"></b>+91 9970-244-544 <span>+91 9980-31-9922</span></li>
+			                    <li><b class="mail-ic headerfooter-sprite"></b><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=contact@bidwai.in" target="_blank">contact@bidwai.in</a></li>
+			                    
+			               </ul>
+				        </div>
+				        <div class="location">
+				        	<h4 class="first_link_footer">Locations</h4>
+				        	  <ul>
+				        		<li>
+			        			<span class="ind-ic headerfooter-sprite"></span>
+			        			<p>Bidwai Technologies Private Limited, 1st floor Bidwai Market , Pusad <i> India</i></p>	
+			        		    </li>
+				        		<li>
+			        			<span class="ind-ic headerfooter-sprite"></span>
+					        	<p>Bidwai Technologies, #201 A Spring Bloom, Shirke Road, Pune  <i>India.</i></p>
+			        		    </li>
+				        	</ul>
+				        </div>
+			        </div>
+					<div class="footer_contact clearfix">
+						<ul class="social-icons clearfix">
+				        	<li><a href="https://www.facebook.com/bidwaitechnologies" target="_blank" class="facebook headerfooter-sprite" title="Facebook" rel="nofollow"></a></li>
+				            <li><a href="https://www.linkedin.com/company/bidwai-associates" target="_blank" class="linkedin headerfooter-sprite" title="Linked In" rel="nofollow"></a></li>
+				            <li><a href="https://plus.google.com/102588690315921652486" target="_blank" rel="publisher nofollow" class="gplus headerfooter-sprite" title="Google Plus"></a></li>
+				        </ul>
+				       <ul class="footer_bottom_link clearfix">
+				            <li><a href="index.html" title="Home">Home</a><span>/</span></li>
+				            <li><a href="terms-and-conditions.html" title="Terms & Conditions">Terms &amp; Conditions</a><span>/</span></li>
+				            <li><a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a><span>/</span></li>
+				            <li><a href="refund-policy.html" title="Refund Policy">Refund Policy</a><span>/</span></li>
+				            <li><a href="faq.html" title="Faqs">Faq</a></li>
+				        </ul>
+				        <p class="copyrights">&copy; Copyrights 2016 by Bidwai Technologies.</p>
+				    </div>
+				</div>
+			  </div>
+		<!-- footer ends -->	
+		
+		
+		<script type="text/javascript" src="http://img.Bidwai Technologies.com/new_js/common.js"></script>		
+		
+		 <script>
+		 var windowWidthfull = $(window).width();
+		 if(windowWidthfull < 980){
+			 $('#pageclick').on('click', function(){
+		    	 jQuery("#nav").slideUp();
+		    	   });
+		 }       
+        </script>        </div>
+    </body>
+</html>

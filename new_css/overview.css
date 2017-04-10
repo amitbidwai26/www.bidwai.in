@@ -1,0 +1,861 @@
+/**
+* Give the web servises
+*
+* User can get the web servises by giving the specific function names
+*
+* @category   Contus
+* @package    Contus_web 
+* @version    1.0
+* @author     Imtiazbasha s a <imtiazbasha@contus.in>
+* @copyright  Copyright (C) 2015 Contus. All rights reserved.
+* @license    GNU General Public License http://www.gnu.org/copyleft/gpl.html 
+*
+**/  
+	 .top-nav{display: none;}
+	 .home-page-sprite{background: url(http://img.contus.com/new_images/home-page/home-sprite.png) no-repeat;}
+	 .overview-sprite{background: url(http://img.contus.com/new_images/overview/overview-sprite.png) no-repeat;}
+	 .overview-staff-sprite{background: url(http://img.contus.com/new_images/overview/overview-staff-sprite.jpg) no-repeat;}
+	 .managers-sprite{background: url(http://img.contus.com/new_images/overview/managers-sprite.jpg) no-repeat;}
+	 .home-page-banner {position: relative;clear: both;float: left;width: 100%;height: 444px;text-align: center;overflow: hidden; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='new_images/overview/overview-banner.jpg', sizingMethod='scale');-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='new_images/overview/overview-banner.jpg', sizingMethod='scale')";overflow: hidden\9}
+	 ::-moz-svg-foreign-content, :root .home-page-banner  { background: url(http://img.contus.com/new_images/overview/overview-banner.jpg) no-repeat;) no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+	 .home-page-banner #big-video-vid_html5_api{width: 100%;display: none\9}
+	 .home-page-banner h1 {position: absolute;top:40%;line-height: 60px;color: #FFF;text-align: center;width: 100%;font-size:155px;z-index: 99;}
+	 .home-page-banner h1 .content{display: block;background-position:-370px -248px;width:172px;height:24px;margin: 18px auto}
+	 .home-page-banner .transparent{display:block;background: rgba(0, 0, 0, 0.4);height: 100%;width: 100%;position: absolute;display: none\9}
+	 
+	 .home-page-banner .linein{position: absolute;bottom: 0;display: block;left: 50%}
+	 .home-page-banner .linein .line{display: block;background: #fff;width: 2px;height:95px}
+	 .home-page-banner .linein .round{width: 10px;height: 10px;background: #fff;border-radius:50%;display: block;position: absolute;left: -152%;}
+	 
+	 .overview_page .top-menu{overflow: hidden;width:521px;margin: 0 auto}
+	 .overview_page .top-menu li{float: left;margin: 0 21px}
+	 .overview_page .top-menu li a{display: block;font-size:18px;color:#343434;line-height: 26px;padding:15px 0; font-family: 'proxima_novalight'}
+	 .overview_page .top-menu li a:hover{border-bottom: 3px solid #f46152;}
+	 .overview_page .top-menu li .active{border-bottom: 3px solid #f46152;color:#000;font-family: 'proxima_novasemibold'}
+	 
+	 .btn-fixed-bottom {position: fixed;bottom: 0;right: 20px;display: none;background: #f46152;color: #FFF;padding: 10px 20px 5PX;;border-radius: 4px 4px 0 0;}
+	 .btn-fixed-bottom:hover{color:#fff;background: #DA5144}
+	 .overview_page .fixed .top-menu{width: 525px;}
+	 .overview_page .fixed{z-index: 9999; position: fixed;  top: 0; width: 100%;background: #fff;border-bottom: 1px solid #eee;}
+     .overview_page .fixed .overview ,.overview_page .fixed .history,.overview_page .fixed .team,
+     .overview_page  .fixed .awards{font-size: 18px;padding: 10px 0;}
+
+	 /* sprite images links here */
+	 .dot{background: url(http://img.contus.com/new_images/overview/dot.png);position: absolute;height: 100%;width: 100%;display: none\9}
+	 .overview_page .overview_body{ margin:0px 10px 20px; text-align: center; overflow:hidden;}
+     .overview_page .first_section{  border-top: 1px dashed #EAEAEA;background:url("http://img.contus.com/new_images/overview/back_01.jpg");  margin-bottom: 20px;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;padding-top: 25px;}
+     .overview_page .first_section p{font-size: 16px;line-height: 27px;  text-align: center;}
+     .overview_page .over_view_sprite{background: url("http://img.contus.com/new_images/overview/sprite_images.png") no-repeat;}
+     .overview_page .second_part li i.outsourced{background-position:-6px -9px;   height: 56px;  margin-bottom: 36px;}
+     .overview_page .second_part li i.highly_eff{background-position:-81px -6px;width: 90px;}
+     .overview_page .web_mob_pro{background-position:-185px -4px;}
+     .overview_page .happy_client{background-position:-273px -3px}
+     
+     .overview_page .bord_img{background-position:-358px -7px;padding:20px 10px 0px 10px;margin:-15px 0px 0px -11px;float:left;}
+     .overview_page .apptha_pro{margin:10px 0 40px 40px;}
+     .overview_page .cbp-rfgrid li div a.facebook{background-position: -24px -248px;width: 13px;margin-left: 9px;}
+     .overview_page .cbp-rfgrid li div a.twitter{background-position:-77px -247px}
+     .overview_page .cbp-rfgrid li div a.twitter:hover{background-position:-77px -272px}
+     .overview_page .weare_hire{background-position:-4px -328px;width: 206px; height: 281px;display:inline-block}
+     .overview_page .nasscom{background-position:-223px -288px;padding:58px 0px 31px 200px;margin:0px 40px 0px -20px;}
+     .overview_page .industry{background-position:-224px -402px;padding:59px 139px 13px 94px;}
+     .overview_page .blue_underline{background-position:-181px -261px;padding:0px 90px 0px 52px;}
+     
+     /* sprite images links here */
+     .overview_page{clear: both}
+     /* heading starts here */
+     .overview_page span{font-size: 18px;color:#474545;margin:0 0px 13px;} 
+     .overview_page .glance{margin:10px 0 50px;font-size:32px;color:#262626;text-align:center;line-height:30px;}
+     .overview_page .built_day{margin:43px 0 0 0}
+     
+     /* heading ends here */
+     .overview_page .fourth_section_text{padding:0;text-align:center;margin-top:-3px;}
+     .overview_page .fourth_section_text h2{font-size:24px;margin-top:-13px;}
+     
+     .overview_page .man_team{margin: 30px 0 19px;}
+     .overview_page .man_team .border{border-bottom: 1px solid #23a7d2;width:18%;display: block;margin:  0 auto}
+     .overview_page .man_team span{font-size:24px;color:#262626;text-align:center;display: block;margin: 0;}
+     .overview_page .intro{margin:50px 0 28px;}
+     .overview_page .intro .border{border-bottom: 1px solid #23a7d2;width:18%;display: block;margin:  0 auto;}
+     .overview_page .man_team p span{font-size:18px;}
+    
+    /* second part four column starts here */
+    .overview_page .second_part li{float: left;}
+    .overview_page .second_part li strong{font-size:32px;color:#262626;display: block;margin: 15px 0;} 
+    .overview_page .second_part li h1{font-size: 18px;line-height: 26px;text-align: center;  margin: 10px 17px;}
+    .overview_page .second_part li .four_icon{margin:0;font-size:0;padding:80px 24px 20px 18px;}
+    
+    /* second part four column ends here */
+     
+    /* fourth and fifth section common class starts here */
+    .overview_page .cbp-rfgrid {width: 100%}
+    .overview_page .bottom{width:67%;margin: 0 auto;position: absolute;bottom: 0%;left:16%;}
+    .overview_page .fourth_section .bottom li{width: 20%;}
+    .overview_page .fourth_section.clearfix {position: relative;}
+    .overview_page .cbp-rfgrid li div{position: absolute;left: 0px;top: 0px;right: 0px;bottom: 0px;opacity: 0;display: none\9;}
+	.overview_page .cbp-rfgrid li div h3{clear: both;background: rgba(14,118,188,0.75);color: #fff;font-size: 18px;margin: 0;position: absolute;bottom: 0;width: 100%;line-height: 20px;padding: 8px 0 8px 0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf0e76bc,endColorstr=#bf0e76bc);}
+	.overview_page .cbp-rfgrid li div p{background: rgba(17,133,75,.75);font-size:13px;position: absolute;bottom: 0;line-height: 18px;margin: 0;}
+	.overview_page .cbp-rfgrid li div span{margin:0 12px;font-size:14px;line-height: 18px;clear: both;display:block;}
+	.overview_page .cbp-rfgrid li div a{float: left;width:23px;height: 25px;position: absolute;right: 5%;top: 5%;}
+	.overview_page .cbp-rfgrid li img {max-width: 100%;}
+	.overview_page .cbp-rfgrid li:hover div{display: block\9;cursor:pointer;}
+	/* fourth and fifth section common class ends here */
+	.overview_page .glance-b{margin: 0}
+	.overview_page .glance-b span{display: block;margin: 0}
+	/* fourth section image hover starts here */
+	.overview_page .fourth_section .cbp-rfgrid.plain{width: 100%;display: block;background: url(http://img.contus.com/new_images/overview/bg.jpg) repeat-x;max-width: 100%;background-size:100% 100% }
+    .overview_page .fourth_section .cbp-rfgrid li {position: relative;float: left;overflow: hidden;width: 16.66%;width: -webkit-calc(100% / 6);width: calc(100% / 6);}
+    .overview_page .fourth_section .cbp-rfgrid.bottom li {position: relative;float: left;overflow: hidden;width: -webkit-calc(100% /4);width: calc(100% / 4);width:25%\9;}
+	.overview_page .fourth_section .cbp-rfgrid li div{width: 100%;color: #fff;text-align:center;}
+	.overview_page .fourth_section .cbp-rfgrid li img {display: block;width: 100%;cursor: pointer;background-size: 100%}
+	.overview_page .fourth_section .cbp-rfgrid li:hover div{opacity: 1;}
+	.overview_page .fourth_section .cbp-rfgrid li span{display: block;height: 100%;max-width: 100%;width: 100%;cursor: pointer;color: #fff;  margin: 0;}
+	.overview_page .fourth_section .cbp-rfgrid li .sriram{background-position: 0 0%}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .sriram{background-position:0 4.16%;background-position:0 -214px\9}
+	.overview_page .fourth_section .cbp-rfgrid li .balak{background-position:0 8.34%;background-position: 0 -429px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .balak{background-position:0 12.53%;  background-position: 0 -644px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .balam{background-position:0 16.7%;  background-position: 0 -859px\9}
+	/* css code for Mozilla browser only starts*/
+	@-moz-document url-prefix(){
+		.overview_page .fourth_section .cbp-rfgrid li .venkatesh{background-position: 0px 58.36%;}
+		.overview_page .fourth_section .cbp-rfgrid li:hover .venkatesh {background-position: 0px 62.53%;}
+		.overview_page .fourth_section .cbp-rfgrid li:hover .arun {background-position: 0px 79.191%;}
+		.overview_page .fourth_section .cbp-rfgrid li:hover .balak {background-position: 0px 12.535%;}
+		.overview_page .fourth_section .cbp-rfgrid li .balam { background-position: 0px 16.71%;}
+		.overview_page .fourth_section .cbp-rfgrid li .dinesh {background-position: 0px 25.03%;}
+	}
+	/* css code for Mozilla browser only ends*/
+	.overview_page .fourth_section .cbp-rfgrid li:hover .balam{background-position:0 20.88%;background-position: 0 -1075px\9}
+	.overview_page .fourth_section .cbp-rfgrid li .dinesh{background-position:0 25.02%;background-position: 0 -1286px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .dinesh{background-position:0 29.19%;background-position: 0 -1500px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .prakash{background-position:0 33.35%;  background-position: 0 -1714px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .prakash{background-position:0 37.52%;  background-position: 0 -1928px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .thiagu{background-position:0 41.68%;  background-position: 0 -2142px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .thiagu{background-position:0 45.85%;  background-position: 0 -2356px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .kannan{background-position:0 95.63%;  background-position: 0 -4710px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .kannan{background-position:0 100.1%;background-position: 0 -4924px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .punith{background-position:0 50%;  background-position: 0 -2570px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .punith{background-position:0 54.2%;  background-position: 0 -2784px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .venkatesh{background-position:0 58.35%;background-position: 0 -2998px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .venkatesh{background-position:0 62.51%;  background-position: 0 -3212px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .hari{background-position:0 83.34%;background-position: 0 -4281px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .hari{background-position:0 87.48%;  background-position: 0 -4495px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .arun{background-position:0 74.99%;  background-position: 0 -3854px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .arun{background-position:0 79.17%;  background-position: 0 -4068px\9;} 
+	.overview_page .fourth_section .cbp-rfgrid li .dilli{background-position:0 66.66%;  background-position: 0 -3426px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li:hover .dilli{background-position:0 70.82%;background-position: 0 -3640px\9;}
+	.overview_page .fourth_section .cbp-rfgrid li .empty{background-position:0 100%} 
+	/* fourth section image hover ends here */
+	
+	.overview_page .hiring{width: 206px;display: block;margin: 0 auto 35px}
+	.overview_page .hiring .hundred{background: #dedede;  color: #000;display:block;  width: 58%;  margin: 0 auto; text-align: center;  padding: 14px 0;  font-size: 30px;}
+	.overview_page .hiring h4{font-size: 31px;margin: 10px 0;text-transform: uppercase;text-align: center;}
+	.overview_page .hiring .border{display: block;margin:0 auto;background: #f25043;width: 3px;height: 37px;}
+	.overview_page .hiring .join{color: #fff;text-transform: uppercase;display: block;text-align: center;margin: 0 auto;font-size: 20px;}
+	@-webkit-keyframes preloader-inside-white {  0% {    -webkit-transform: scale(0, 0);    -moz-transform: scale(0, 0);    -ms-transform: scale(0, 0);    -o-transform: scale(0, 0);    transform: scale(0, 0);  }  
+	100% {    -webkit-transform: scale(1, 1);    -moz-transform: scale(1, 1);    -ms-transform: scale(1, 1);    -o-transform: scale(1, 1);    transform: scale(1, 1);  }}
+	@keyframes preloader-inside-white {  0% {    -webkit-transform: scale(0, 0);    -moz-transform: scale(0, 0);    -ms-transform: scale(0, 0);    -o-transform: scale(0, 0);    transform: scale(0, 0);  }  100% {
+    -webkit-transform: scale(1, 1);    -moz-transform: scale(1, 1);    -ms-transform: scale(1, 1);    -o-transform: scale(1, 1);    transform: scale(1, 1);  }}
+	@-webkit-keyframes preloader-inside-red {  0% {    -webkit-transform: scale(0, 0);    -moz-transform: scale(0, 0);    -ms-transform: scale(0, 0);    -o-transform: scale(0, 0);    transform: scale(0, 0);  }  
+	30% {    -webkit-transform: scale(0, 0);    -moz-transform: scale(0, 0);    -ms-transform: scale(0, 0);    -o-transform: scale(0, 0);    transform: scale(0, 0);  }  100% {
+	-webkit-transform: scale(1, 1);    -moz-transform: scale(1, 1);    -ms-transform: scale(1, 1);    -o-transform: scale(1, 1);    transform: scale(1, 1);  }	}
+	@keyframes preloader-inside-red {  0% {    -webkit-transform: scale(0, 0);    -moz-transform: scale(0, 0);    -ms-transform: scale(0, 0);    -o-transform: scale(0, 0);    transform: scale(0, 0);  }  30% {    -webkit-transform: scale(0, 0);    -moz-transform: scale(0, 0);    -ms-transform: scale(0, 0);    -o-transform: scale(0, 0);    transform: scale(0, 0);  }100% {    -webkit-transform: scale(1, 1);    -moz-transform: scale(1, 1);    -ms-transform: scale(1, 1);    -o-transform: scale(1, 1);    transform: scale(1, 1);  }}
+	.overview_page .preloader-container {display:block;margin: auto;position: relative;}
+	.overview_page .preloader-container .animated-preloader {display:block;background: #f25043;border-radius: 50%;width: 135px;height: 135px;}
+	.overview_page .preloader-container a span{  width: 130px; margin: 0; position: absolute;  top: 36%;  color: #fff;  z-index: 99;  font-size: 20px;  line-height: 24px;  left: 19%;}
+	.overview_page .preloader-container .animated-preloader:after {  content: '';  display: inline-block;width: 132px;height: 132px;position: absolute;  top:-2%;  left:16%;  border-radius: 50em;  border:5px solid #ff8f86;  -webkit-animation: preloader-inside-white 1s ease-in-out infinite;  -ms-animation: preloader-inside-white 1s ease-in-out infinite;  animation: preloader-inside-white 1s ease-in-out infinite;}
+	.overview_page .preloader-container .animated-preloader:before {  content: '';  display: inline-block;width: 132px;height: 132px; position: absolute;  top:-3%;  left:16%;  z-index: 10;  border-radius: 50em; -webkit-animation: preloader-inside-red 1s ease-in-out infinite;  -ms-animation: preloader-inside-red 1s ease-in-out infinite;  animation: preloader-inside-red 1s ease-in-out infinite;}
+	
+	/* fifth section image hover starts here */
+	.overview_page .em1e, .em2e, .em3e, .em4e, .em5e{background-image: url('http://img.contus.com/new_images/overview/overview-staff-sprite.jpg'); }
+	.overview_page .em1e { background-position: 0 0%; }
+	.overview_page .em2e { background-position: 0 25%;}
+	.overview_page .em3e { background-position: 0 50%}
+	.overview_page .em4e { background-position: 0 75%}
+	.overview_page .em5e { background-position: 0 100%}
+	
+    .overview_page .fifth_section .cbp-rfgrid li {position: relative;float: left;overflow: hidden; box-sizing: border-box;width: 16.6666667%; /*Fallback*/width: -webkit-calc(100% / 13);width: calc(100% / 13);width: 7.69% \9}
+    _:-ms-fullscreen, :root .overview_page .fifth_section .cbp-rfgrid li {width:7.69%;}
+    ::-moz-svg-foreign-content, :root .overview_page .fifth_section .cbp-rfgrid li{width: 7.69%}
+    .overview_page .fifth_section .cbp-rfgrid li span{display: block;width: 104px;height: 114px;cursor: pointer;  margin: 0;background-size:100%;  max-width: 100%;}
+    .bg{width: 104px;height: 114px;display:none;transition: all .5s linear;}
+    .overview_page .fifth_section .cbp-rfgrid li .img1{background-position: 0 0;background-size:100%;background-position: 0% 0%;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img1{background-size:100%;background-position:0% 0.97%;background-position: 0 -114px\9;}
+  	.overview_page .fifth_section .cbp-rfgrid li .img2{background-size:100%;background-position:0% 1.95%;background-position: 0 -228px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img2{background-size:100%;background-position:0% 2.911%;background-position: 0 -342px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img3{background-size:100%;background-position:0% 3.884%;background-position: 0 -456px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img3{background-size:100%;background-position:0% 4.86%;background-position: 0 -570px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img4{background-size:100%;background-position:0% 5.825%;background-position: 0 -684px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img4{background-size:100%;background-position:0% 6.8%;background-position: 0 -798px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img5{background-size:100%;background-position:0% 7.772%;background-position: 0 -912px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img5{background-size:100%;background-position:0% 8.74%;background-position: 0 -1026px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img6{background-size:100%;background-position:0% 9.72%;background-position: 0 -1140px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img6{background-size:100%;background-position:0% 10.68%;background-position: 0 -1254px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img7{background-size:100%;background-position:0% 11.66%;background-position: 0 -1368px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img7{background-size:100%;background-position:0% 12.621%;background-position: 0 -1482px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img8{background-size:100%;background-position:0% 13.6%;background-position: 0 -1596px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img8{background-size:100%;background-position:0% 14.57%;background-position: 0 -1710px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img9{background-size:100%;background-position:0% 15.54%;background-position: 0 -1824px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img9{background-size:100%;background-position:0% 16.51%;background-position: 0 -1938px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img10{background-size:100%;background-position:0% 17.481%;background-position: 0 -2052px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img10{background-size:100%;background-position:0% 18.45%;background-position: 0 -2166px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img11{background-size:100%;background-position:0% 19.42%;background-position: 0 -2280px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img11{background-size:100%;background-position:0% 20.4%;background-position: 0 -2394px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img12{background-size:100%;background-position:0% 21.36%;background-position: 0 -2508px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img12{background-size:100%;background-position:0% 22.33%;background-position: 0 -2622px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img13{background-size:100%;background-position:0% 23.3%;background-position: 0 -2736px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img13{background-size:100%;background-position:0% 24.28%;background-position: 0 -2850px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img14{background-size:100%;background-position:0% 25.24%;background-position: 0 -2964px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img14{background-size:100%;background-position:0% 26.21%;background-position: 0 -3078px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img15{background-size:100%;background-position:0% 27.188%;background-position: 0 -3192px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img15{background-size:100%;background-position:0% 28.158%;background-position: 0 -3306px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img16{background-size:100%;background-position:0% 29.13%;background-position: 0 -3420px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img16{background-size:100%;background-position:0% 30.1%;background-position: 0 -3534px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img17{background-size:100%;background-position:0% 31.07%;background-position: 0 -3648px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img17{background-size:100%;background-position:0% 32.04%;background-position:0 -3762px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img18{background-size:100%;background-position:0% 33.01%;background-position: 0 -3876px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img18{background-size:100%;background-position:0% 33.98%;background-position: 0 -3990px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img19{background-size:100%;background-position:0% 34.96%;background-position: 0 -4104px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img19{background-size:100%;background-position:0% 35.923%;background-position: 0 -4218px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img20{background-size:100%;background-position:0% 36.9%;background-position: 0 -4332px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img20{background-size:100%;background-position:0% 37.862%;background-position: 0 -4446px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img21{background-size:100%;background-position:0% 38.84%;background-position: 0 -4560px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img21{background-size:100%;background-position:0% 39.81%;background-position: 0 -4674px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img22{background-size:100%;background-position:0% 40.78%;background-position: 0 -4788px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img22{background-size:100%;background-position:0% 41.75%;background-position: 0 -4902px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img23{background-size:100%;background-position:0% 42.72%;background-position: 0 -5016px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img23{background-size:100%;background-position:0% 43.69%;background-position: 0 -5130px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img24{background-size:100%;background-position:0% 44.664%;background-position: 0 -5244px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img24{background-size:100%;background-position:0% 45.67%;background-position: 0 -5358px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img25{background-size:100%;background-position:0% 46.6%;background-position: 0 -5472px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img25{background-size:100%;background-position:0% 47.58%;background-position: 0 -5586px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img26{background-size:100%;background-position:0% 48.55%;background-position: 0 -5700px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img26{background-size:100%;background-position:0% 49.514%;background-position: 0 -5814px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img27{background-size:100%;background-position:0% 50.485%;background-position: 0 -5928px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img27{background-size:100%;background-position:0% 51.456%;background-position: 0 -6042px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img28{background-size:100%;background-position:0% 52.43%;background-position: 0 -6156px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img28{background-position: 0 -6270px\9;background-size:100%;background-position:0% 53.4%}
+    .overview_page .fifth_section .cbp-rfgrid li .img29{background-size:100%;background-position:0% 54.3731%;background-position: 0 -6384px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img29{background-size:100%;background-position:0% 55.35%;background-position: 0 -6498px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img30{background-size:100%;background-position:0% 56.31%;background-position: 0 -6612px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img30{background-size:100%;background-position:0% 57.28%;background-position: 0 -6726px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img31{background-size:100%;background-position:0% 58.26%;background-position: 0 -6840px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img31{background-size:100%;background-position:0% 59.22%;background-position: 0 -6954px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img32{background-size:100%;background-position:0% 60.2%;background-position: 0 -7068px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img32{background-size:100%;background-position:0% 61.17%;background-position: 0 -7182px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img33{background-size:100%;background-position:0% 62.14%;background-position: 0 -7296px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img33{background-size:100%;background-position:0% 63.111%;background-position: 0 -7410px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img34{background-size:100%;background-position:0% 64.08%;background-position: 0 -7524px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img34{background-size:100%;background-position:0% 65.05%;background-position: 0 -7638px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img35{background-size:100%;background-position:0% 66.025%;background-position: 0 -7752px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img35{background-size:100%;background-position:0% 66.99%;background-position: 0 -7866px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img36{background-size:100%;background-position:0% 67.963%;background-position: 0 -7980px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img36{background-size:100%;background-position:0% 68.935%;background-position: 0 -8094px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img37{background-size:100%;background-position:0% 69.91%;background-position: 0 -8208px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img37{background-size:100%;background-position:0% 70.88%;background-position: 0 -8322px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img38{background-size:100%;background-position:0% 71.85%;background-position: 0 -8436px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img38{background-size:100%;background-position:0% 72.812%;background-position: 0 -8550px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img39{background-size:100%;background-position:0% 73.79%;background-position: 0 -8664px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img39{background-size:100%;background-position:0% 74.76%;background-position: 0 -8778px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img40{background-size:100%;background-position:0% 75.73%;background-position: 0 -8892px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img40{background-size:100%;background-position:0% 76.7%;background-position: 0 -9006px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img41{background-size:100%;background-position:0% 77.68%;background-position: 0 -9120px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img41{background-size:100%;background-position:0% 78.64%;background-position: 0 -9234px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img42{background-size:100%;background-position:0% 79.616%;background-position: 0 -9348px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img42{background-size:100%;background-position:0% 80.589%;background-position: 0 -9462px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img43{background-size:100%;background-position:0% 81.56%;background-position: 0 -9576px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img43{background-size:100%;background-position:0% 82.53%;background-position: 0 -9690px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img44{background-size:100%;background-position:0% 83.499%;background-position: 0 -9804px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img44{background-size:100%;background-position:0% 84.48%;background-position: 0 -9918px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img45{background-size:100%;background-position:0% 85.44%;background-position: 0 -10032px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img45{background-size:100%;background-position:0% 86.41%;background-position: 0 -10146px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img46{background-size:100%;background-position:0% 87.38%;background-position: 0 -10260px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img46{background-size:100%;background-position:0% 88.352%;background-position: 0 -10374px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img47{background-size:100%;background-position:0% 89.321%;background-position: 0 -10488px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img47{background-size:100%;background-position:0% 90.3%;background-position: 0 -10602px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img48{background-size:100%;background-position:0% 91.27%;background-position: 0 -10716px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img48{background-size:100%;background-position:0% 92.25%;background-position: 0 -10830px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img49{background-size:100%;background-position:0% 93.22%;background-position: 0 -10944px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img49{background-size:100%;background-position:0% 94.178%;background-position: 0 -11058px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img50{background-size:100%;background-position:0% 95.154%;background-position: 0 -11172px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img50{background-size:100%;background-position:0% 96.13%;background-position: 0 -11286px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img51{background-size:100%;background-position:0% 97.1%;background-position: 0 -11400px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img51{background-size:100%;background-position:0% 98.07%;background-position: 0 -11514px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li .img52{background-size:100%;background-position:0% 99.027%;background-position: 0 -11628px\9;}
+    .overview_page .fifth_section .cbp-rfgrid li:hover .img52{background-size:100%;background-position:0% 100%;background-position: 0 -11742px\9;}
+    /* css code for Mozilla browser only starts*/
+	@-moz-document url-prefix() {
+		.overview_page .fifth_section .cbp-rfgrid li .img46 {background-position: 0% 87.39%;}
+	}
+	/* css code for Mozilla browser only ends*/
+    .overview_page .fifth_section .cbp-rfgrid li img {display: block;width: 100%;cursor: pointer;}
+	.overview_page .fifth_section .cbp-rfgrid li div{left: 0px;top: 0px;right: 0px;bottom: 0px;background: rgba(14,118,188,0.3);opacity: 0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c0e76bc,endColorstr=#4c0e76bc);}
+	.overview_page .fifth_section .cbp-rfgrid li:hover div{opacity: 1;}
+	
+	/* fifth section image hover ends here */
+	
+	/* stylesheet for ie and 1024px */
+	.overview_page .wrapper{margin:0 auto; width:1090px;}
+    
+    .overview_page .three-col{padding-top: 50px;}
+	.overview_page .three-col li{float: left;width: 330px;margin-bottom:20px;}
+	.overview_page .three-col li.second{padding:0 40px;}
+	.overview_page .three-col li h4{font-size:32px;color:#262626;font-family: 'proxima_novasemibold';} 
+	.overview_page .three-col li p{font-size:16px;line-height:25px;margin-top:20px}
+    
+    .overview_page .second_part li{width:270px;float:left;min-height:260px;position: relative;}
+    
+    .overview_page .second_part li:first-child{ border: none;}
+    .overview_page .second_part li i{width: 70px;height:70px;display: block;margin: 20px auto;}
+    .overview_page .second_part li{border-left:1px dashed #b8b8b8;}
+    .round{position: absolute;margin: 0;top: -5%;left:-4%;}
+    .overview_page .second_part li .rou{background: #fff;width:20px;height:20px;border-radius:50%;border: 1px dashed #d9d9d9;position: relative;display: block;}
+    .overview_page .second_part li .rou .dash{background: #eaeaea;width:10px;height:10px;border-radius:50%;display: block;position: absolute;top:-75%;left: 24%;left: 25%\9}
+    
+    /* timeline style here */
+    .f-right{float: right !important}
+    .timeline-space{margin-bottom: 40px;}
+    .over-content-part-right{padding-left: 30px;position: relative;width: 380px}
+    .over-content-part-left{padding-right: 30px;position: relative;text-align: right;width: 390px; float: right;}
+    .over-content-part-left .outercolor{padding: 10px !important;background: #fff;display: inline-block !important;margin: -28px -0 0 3px !important;height: 26px;position: absolute;top: 50%;right: -23px;}
+    .over-content-part-right .outercolor{padding: 10px !important;background: #fff;  display: inline-block !important;margin: -22px 0 0 -52px !important;height: 26px;position: absolute;top:50%}
+    .small-round{width: 20px;height: 20px;display: inline-block;border: 3px solid #000;border-radius: 20px;}
+    .overview_page .tl_contus li {width:50%;float:left;}
+    .overview_page .tl_contus li h2,
+    .overview_page .tl_contus li p span{font-family: 'proxima_nova_rgregular';font-size:24px;color:#000;margin: 0}
+    .overview_page .tl_contus li p{font-family: 'proxima_novalight';font-size:18px;color:#000;line-height: 24px}
+    
+    .overview_page .time_years{text-align:center;}
+    .overview_page .time_years span{font-family: 'proxima_novasemibold';font-size: 32px;color: #000;background: #fff;border: 3px solid #000;display: inline-block; border-radius: 67px;  width: 110px;height: 70px;padding-top: 40px;  margin-top: 5%;}
+    .overview_page .background_timeline .tl_contus li{padding-top: 5%;}
+    .overview_page .implement{font-size: 24px;text-align: center;}
+    .overview_page .background_timeline .black-line{display: block;height: 3px;width: 140px;margin: 0 auto;background: #000}
+    
+    /* timline images*/ 
+     .overview_page .background_timeline .tl_contus .img1{background-position: -498px -359px;padding: 78px 115px;float: right;  margin-top: -98px;}
+     .overview_page .background_timeline .tl_contus .img2{background-position: -138px -104px;padding: 66px 120px;float: left;  margin-top: -67px;}
+     .overview_page .background_timeline .tl_contus .img3{background-position: -410px -6px;padding: 70px 134px;float: right;  margin-top: -65px;}
+     .overview_page .background_timeline .tl_contus .img4{background-position: 1px -80px;padding: 69px 134px;float: right;margin-top: -60px;}
+     .overview_page .background_timeline .tl_contus .img5{background-position: -539px 0px;padding: 69px 134px;float: left;margin-top: -90px;}
+     .overview_page .background_timeline .tl_contus .img6{background-position: -404px -166px;padding: 75px 130px;float: right;margin-top: -64px;}
+     .overview_page .background_timeline .tl_contus .img7{background-position: -498px -525px;padding: 92px 130px;float: right; margin-top: 28px;;}
+     .overview_page .background_timeline .tl_contus .img8{  background-position: -552px -218px;padding: 58px 132px;float: left;  margin-top: -27px;}
+    
+    #awards{margin-top: 30px;overflow: hidden;border-top: 1px solid #ebebeb}
+    #awards h3{font-family: 'proxima_novasemibold';margin-top: 30px}
+    #awards .awards-section {text-align: center;}
+    #awards .awards-section li{margin: 30px 10px 60px;width:195px;text-align: center;display: inline-block;}
+    #awards .awards-section li span{display: inline-block;margin: 0;vertical-align: middle;}
+    
+    #awards .awards-section li .sme-img{background-position: 0px -259px;padding: 21px 75px;}
+	#awards .awards-section li .nasscom-img{background-position: -83px -347px;padding: 33px 68px;}
+	#awards .awards-section li .bma-img{background-position: -352px -336px;padding: 42px 48px;}
+	#awards .awards-section li .clutch-img{background-position: -176px -426px;padding: 36px 62px;}
+	#awards .awards-section li .cii-img{background-position: -177px -263px;padding: 26px 81px;}
+	#awards .awards-section li .red-img{background-position: -2px -342px;padding: 39px 39px;}
+	#awards .awards-section li .esparks-img{background-position: -1px -428px;padding: 36px 84px;}
+	#awards .awards-section li .bwda-img{background-position: -237px -339px;padding: 34px 53px;}
+    
+   /* timeline style here */ 
+    .overview_page .background_timeline{background:url("http://img.contus.com/new_images/overview/timeline-line.jpg") repeat-y scroll center top #fff;padding:0 10px 0 10px;margin:20px 0;}
+		
+@media  (min-width:1101px)and (max-width:1250px){
+	.home-page-banner{width: 100%;height:391px;overflow:hidden;}
+}	
+@media screen and (max-width:1100px){
+	.home-page-banner{width: 100%;height:370px;overflow:hidden;}
+	.overview_page .wrapper{width: 999px;}
+	.overview_page .three-col li {width: 30%}
+	.overview_page .second_part li {width: 24%;}
+	.overview_page .seventh_section .membership li {width: 49%;float: left;}
+	.overview_page .seventh_section .membership li:nth-child(2) p {padding: 16px 10px 30px 20px;overflow: hidden;}
+	.overview_page .nasscom{float: left;}
+	.overview_page .industry{float: left;padding: 59px 139px 19px 94px;}
+	.overview_page .nasscom,.overview_page .industry{margin: 10px 50px;}
+}
+@media screen and (max-width:1025px) 
+	@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    video {display: none}
+    .headerhome{background: url('http://img.contus.com/new_images/overview/banner-poster.jpg') no-repeat center ;}
+}}
+}
+@media screen and (min-width:1025px) 
+{
+	.overview_page .seventh_section .membership li .sm_clas{display:none;}
+}
+@media  (min-width:801px)and (max-width:1024px)
+{
+	.headerhome {background:url('http://img.contus.com/new_images/overview/overview-banner.jpg') no-repeat center;-webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;}
+	.overview_page .wrapper{margin:0 auto; width:770px;}
+	
+	/* who what why style start here */
+  	.overview_page .three-col li{float: left;width: 260px;margin-bottom:20px;}
+	.overview_page .three-col li:nth-child(2){padding:0 10px;}
+	
+	/* Contus at a Glance starts here*/
+    .overview_page .second_part ul li{width:24%;float:left;min-height:260px;}
+    .overview_page .second_part ul li:nth-child(2) { border-left:1px dashed #b8b8b8;}
+    .overview_page .second_part ul li:nth-child(3){border-left:1px dashed #b8b8b8;border-right:1px dashed #b8b8b8;}
+    /* Contus at a Glance starts here*/
+    
+    /* timeline style starts here */
+    
+    .overview_page .tl_contus li {width:50%;float:left;}
+    
+    .overview_page .tl_first{padding:30px 0 40px 0;text-align:right;}
+    .overview_page .tl_first h2{padding:0px 170px 0px 0px;margin:0;}
+    .overview_page .tl_first p{padding:0 170px 0px 30px;}
+    
+    .overview_page .tl_second{padding:120px 0 10px 0;}
+    .overview_page .tl_second p{padding:30px 28px 0 150px;}
+    
+    .overview_page .tl_third{padding:0px 0 40px 0;text-align:right;}
+    .overview_page .tl_third h2{padding:0px 170px 0px 0px;margin:0;}
+    .overview_page .tl_third p{padding:0 170px 0 30px;}
+    
+    .overview_page .tl_fourth{padding:80px 0 10px 0;}
+    .overview_page .tl_fourth h2{margin:0;padding:0;}
+    .overview_page .tl_fourth p{padding:0px 50px 0px 0px;}
+    
+    .overview_page .tl_fifth{padding:15px 0 40px 0;text-align:right;}
+    .overview_page .tl_fifth p{padding:40px 170px 0 50px;}
+    .overview_page .tl_fifth p span{font-family: 'proxima_novasemibold';font-size:18px;color:#000;}
+    
+    .overview_page .tl_sixth{padding:110px 0 10px 0;}
+    .overview_page .tl_sixth h2{margin:0;padding:10px 0 0 0;}
+    .overview_page .tl_sixth p{padding:0 40px 0 180px;}
+    
+    .overview_page .tl_seventh{padding:30px 0 40px 0;text-align:right;}
+    .overview_page .tl_seventh h2{padding:0px 80px 0px 0px;margin:0;font-family: 'proxima_novasemibold'!important;font-size:32px!important;}
+    .overview_page .tl_seventh p{padding:0 80px 0 90px;}
+    
+    .overview_page .tl_eight{padding:100px 0 0px 0;}
+    .overview_page .tl_eight h2{padding:0;margin:0;}
+    .overview_page .tl_eight p{padding:0 30px 0 0px;}
+  
+    .overview_page .tl_ninth{padding:0px 0 20px 0;text-align:right;}
+    .overview_page .tl_ninth h2{padding:0px 190px 0px 0px;margin:0;}
+    .overview_page .tl_ninth p{padding:0 190px 0px 60px;}
+    
+    .overview_page .tl_tenth{padding:30px 0 0px 0;text-align:right;}
+    .overview_page .tl_tenth h2{padding:30px 200px 0px 0px;margin:0;}
+    .overview_page .tl_tenth p{padding:0 197px 0px 100px;}
+    
+    .overview_page .tl_eleven{padding:20px 0 20px 0;}
+    .overview_page .tl_eleven h2{padding:0px;}
+    .overview_page .tl_eleven p{padding:0px;}
+    
+    .overview_page .tl_tweth{padding:20px 0 20px 0;text-align:right;}
+    .overview_page .tl_tweth h2{padding:0px 197px 0px 0px;margin:0;}
+    .overview_page .tl_tweth p{padding:0 197px 0px 10px;}
+    
+    .overview_page .background_timeline{background:url("http://img.contus.com/new_images/overview/timeline-line.jpg") repeat-y scroll center top #fff;padding:0 10px 0 10px;}
+    /* timeline style starts here */
+    /* introducing contusians starts here */
+	.overview_page .cbp-rfgrid li div h3{font-size:18px;margin:70px 0 0 0;}
+	.overview_page .cbp-rfgrid li div p{font-size:13px;margin-bottom:40px;}
+	.overview_page .fourth_section .cbp-rfgrid li {width: 25%; /* Fallback */width: -webkit-calc(100% / 4);width: calc(100% / 4);}
+	.overview_page .fifth_section .cbp-rfgrid li {width: 25%; /* Fallback */width: -webkit-calc(100% / 10);width: calc(100% / 10);}
+	/* introducing contusians starts here */
+	
+	/* membership starts here */
+	.overview_page .seventh_section .membership li{width:100%;}
+	.overview_page .seventh_section .membership li h3{text-align:center;}
+	.overview_page .seventh_section .membership{padding:60px 0px 0px 0px}
+	.overview_page .seventh_section .membership li{width:100%;text-align:center}
+	.overview_page .seventh_section .membership li:nth-child(1) p{padding:20px 80px;}
+	.overview_page .seventh_section .membership li:nth-child(2) p{padding:0}
+	.overview_page .seventh_section .membership li .sm_clas{display:none;}
+	.overview_page .nasscom,.overview_page .industry{margin: 10px 80px;}
+	/* membership ends here */
+	.round {left: -6%;}
+	.overview_page .fifth_section .cbp-rfgrid li.move{margin-left:40%}
+	.overview_page .fourth_section .cbp-rfgrid li {width: -webkit-calc(100% / 6);width: calc(100% / 6);}
+	.overview_page .fourth_section .cbp-rfgrid li div h3 {  font-size:14px !important;line-height:20px !important;}
+	.over-content-part-right,
+ 	.over-content-part-left{width: 320px;}
+ 	.overview_page .background_timeline .tl_contus .img1{margin-top: -99px;}
+     .overview_page .background_timeline .tl_contus .img2{margin-top: -53px;}
+     .overview_page .background_timeline .tl_contus .img3{margin-top: -47px;}
+     .overview_page .background_timeline .tl_contus .img4{margin-top: -49px;}
+     .overview_page .background_timeline .tl_contus .img5{margin-top: -75px;}
+     .overview_page .background_timeline .tl_contus .img6{margin-top: -55px;}
+     .overview_page .background_timeline .tl_contus .img7{margin-top: 14px;}
+     .overview_page .background_timeline .tl_contus .img8{margin-top: -27px;}
+}
+@media screen and (max-width:830px){
+	.overview_page .fifth_section .cbp-rfgrid li .img3 { background-position: 0% 3.885%;}
+}
+@media  (min-width:799px)and (max-width:1000px){
+	.overview_page .bottom {width:100%}
+	.overview_page .fourth_section .cbp-rfgrid.bottom li,.overview_page .fourth_section .cbp-rfgrid li{width: -webkit-calc(100% / 3);width: calc(100% / 3);}
+	.overview_page .fourth_section .cbp-rfgrid.bottom li.last-t{margin-left: 17%}
+	.overview_page .fourth_section .cbp-rfgrid,.overview_page .bottom{width:100%;position: relative;left: 0}
+  	.overview_page .fourth_section .cbp-rfgrid.plain {position: absolute;bottom: 0;}
+}
+@media (min-width:801px)and (max-width:950px){
+	.headerhome {background:url('http://img.contus.com/new_images/overview/overview-banner.jpg') no-repeat center;-webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;}
+	video,.home-page-banner .transparent,.dot {display: none;}
+}
+@media (min-width:641px) and (max-width:800px)
+{
+    .overview_page .wrapper{margin:0 auto; width:617px;}
+    .home-page-banner .linein .round {left: -182%;}
+    
+    /* who what why style start here */
+    .overview_page .three-col{width:100%;overflow: hidden;text-align: center;padding:40px 0px 0px 0px;}
+	.overview_page .three-col li{width:100%;}
+	.overview_page .three-col li:nth-child(2){padding:0;}
+	.overview_page .three-col li p{padding:0 0px 0 0}
+	/* who what why style ends here */
+	
+	/* Contus at a Glance starts here*/
+    .overview_page .second_part ul li{width:49%;float:left;}
+    .overview_page .second_part ul li:nth-child(1){margin-bottom:30px;}
+    .overview_page .second_part ul li:nth-child(2){ border-left:1px dashed #b8b8b8;margin-bottom:30px;}
+    .overview_page .second_part ul li:nth-child(3){ border-right:1px dashed #b8b8b8;margin-top:20px;border-left:none!important;}
+    .overview_page .second_part ul li:nth-child(3) .bord_img{display:none;}
+    /* Contus at a Glance ends here*/
+    .round {left: -6%;}
+    .overview_page .second_part ul li:nth-child(4){margin-top:20px;}
+    .overview_page .second_part ul li h1{margin-left:-10px;} 
+    .overview_page .tl_mob {margin-bottom: 29%;}
+    .overview_page .man_team .border {margin: 9px auto;}
+    /* timeline style starts here */
+    
+    .overview_page .tl_contus li {width:50%;float:left;}
+    
+    .overview_page .tl_first h2{padding:0px 170px 0px 0px;margin:0;}
+    .overview_page .tl_first p{padding:0 170px 0px 0px;}
+
+    .overview_page .tl_second p{padding:30px 0px 0 150px;}
+    
+    .overview_page .tl_third h2{padding:0px 170px 0px 0px;margin:0;}
+    .overview_page .tl_third p{padding:0 170px 0 0px;}
+
+    .overview_page .tl_fourth h2{margin:0;padding:0;}
+    .overview_page .tl_fourth p{padding:0px 0px 0px 0px;}
+  
+    .overview_page .tl_fifth p{padding:20px 170px 0 0px;}
+    .overview_page .tl_fifth p span{font-family: 'proxima_novasemibold';font-size:18px;color:#000;}
+    
+    .overview_page .tl_sixth h2{margin:0;padding:10px 0 0 0;}
+    .overview_page .tl_sixth p{padding:0 0px 0 0px;}
+  
+    .overview_page .tl_seventh h2{padding:0px 80px 0px 0px;margin:0;font-family: 'proxima_novasemibold'!important;font-size:32px!important;}
+    .overview_page .tl_seventh p{padding:0 80px 0 0px;}
+   
+    .overview_page .tl_eight h2{padding:10px 0 0 0;margin:0;}
+    .overview_page .tl_eight p{padding:0 0px 0 0px;}
+  
+    .overview_page .tl_ninth h2{padding:0px 170px 0px 0px;margin:0;}
+    .overview_page .tl_ninth p{padding:0 170px 0px 0px;}
+    
+    .overview_page .tl_tenth h2{padding:30px 200px 0px 0px;margin:0;}
+    .overview_page .tl_tenth p{padding:0 197px 0px 100px;}
+    
+    .overview_page .tl_eleven h2{padding:0px;}
+    .overview_page .tl_eleven p{padding:0px;}
+   
+    .overview_page .tl_tweth h2{padding:0px 197px 0px 0px;margin:0;}
+    .overview_page .tl_tweth p{padding:0 197px 0px 0px;}   
+    .overview_page .background_timeline{background:url("http://img.contus.com/new_images/overview/timeline-line.jpg") repeat-y scroll center top #fff;padding:0 10px 0 10px;}
+   
+    /* timeline style starts here */    
+	.overview_page .cbp-rfgrid li div h3{font-size:18px!important;margin:70px 0 0 0;}
+	.overview_page .cbp-rfgrid li div p{font-size:13px;margin-bottom:40px;}
+	
+	.overview_page .fourth_section .cbp-rfgrid li {width: 33.3333333%; /* Fallback */width: -webkit-calc(100% / 3);width: calc(100% / 3);}
+	.overview_page .fifth_section .cbp-rfgrid li {width: 25%; /* Fallback */width: -webkit-calc(100% / 8);width: calc(100% / 8);}
+
+	.overview_page .seventh_section .membership li{width:100%;}
+	.overview_page .seventh_section .membership li h3{text-align:center;}
+	.overview_page .seventh_section .membership{padding:60px 0px 0px 0px}
+	.overview_page .seventh_section .membership li{width:100%;text-align:center}
+	.overview_page .seventh_section .membership li:nth-child(1) p{padding:20px 80px;}
+	.overview_page .seventh_section .membership li:nth-child(2) p{padding:0}
+	.overview_page .nasscom,.overview_page .industry{margin: 15px 43px;}
+	.overview_page .seventh_section .membership li .sm_clas{display:none;}
+}     
+@media screen and (max-width:800px){
+  	.headerhome {background:url('http://img.contus.com/new_images/overview/overview-banner.jpg') no-repeat center;-webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;}
+	video,.home-page-banner .transparent,.dot {display: none;}
+	.overview_page .fixed{display: none;}
+	.top-nav{display: none!important;}
+	
+	.overview_page .fourth_section .cbp-rfgrid li,.overview_page .fourth_section .bottom li{width: 33%;}
+  	.overview_page .fourth_section .bottom li.last{float:left}
+  	.overview_page .fifth_section .cbp-rfgrid li {width: -webkit-calc(100% / 8);width: calc(100% / 8);}
+  	
+  	.overview_page .fifth_section .cbp-rfgrid li.move-l{margin-left:25%}
+  	.overview_page .fourth_section .cbp-rfgrid,.overview_page .bottom{width:100%;position: relative;left: 0}
+  	.overview_page .fourth_section .cbp-rfgrid.plain {position: absolute;bottom: 0;height: 27%;}
+  	.overview_page .fifth_section .cbp-rfgrid li .img2 {background-position: 0% 1.95%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img2 {background-position: 0% 2.91778%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img4 {background-position: 0% 5.83%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img5 {background-position: 0% 8.75%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img7 {background-position: 0% 11.66%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img8 {background-position: 0% 13.6%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img9 {background-position: 0% 15.54%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img10 {background-position: 0% 17.478%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img10 {background-position: 0% 18.46%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img12 {background-position: 0% 21.37%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img13 {background-position: 0% 23.31%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img14 {background-position: 0% 26.22%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img15 {background-position: 0% 27.187%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img15 {background-position: 0% 28.161%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img18 {background-position: 0% 33.02%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img18 {background-position: 0% 33.99%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img20 {background-position: 0% 36.9%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img21 {background-position: 0% 38.84%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img23 {background-position: 0% 42.73%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img23 {background-position: 0% 43.7%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img26 {background-position: 0% 48.55%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img26 {background-position: 0% 49.519%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img28 {background-position: 0% 52.44%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img28 {background-position: 0% 53.41%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img30 {background-position: 0% 56.32%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img31 {background-position: 0% 59.23%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img33 {background-position: 0% 62.15%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img34 {background-position: 0% 65.06%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img35 {background-position: 0% 66.027%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img36 {background-position: 0% 68.939%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img36 {background-position: 0% 67.964%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img38 {background-position: 0% 71.86%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img38 {background-position: 0% 72.814%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img39 {background-position: 0% 74.78%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img41 {background-position: 0% 77.7%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img43 {background-position: 0% 81.57%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img46 {background-position: 0% 87.39%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img47 {background-position: 0% 89.322%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img49 {background-position: 0% 94.182%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img51 {background-position: 0% 97.094%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img52 {background-position: 0% 99.032%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img39 {background-position: 0% 73.792%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li:hover .img52 {background-position: 0% 100.01%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li .img52 {background-position: 0% 99.036%;}
+ 	.over-content-part-right,
+ 	.over-content-part-left{width: 270px;}
+ 	 .overview_page .background_timeline .tl_contus .img1{margin-top: -89px;}
+     .overview_page .background_timeline .tl_contus .img2{margin-top: -53px;}
+     .overview_page .background_timeline .tl_contus .img3{margin-top: -35px;}
+     .overview_page .background_timeline .tl_contus .img4{margin-top: -49px;}
+     .overview_page .background_timeline .tl_contus .img5{margin-top: -75px;}
+     .overview_page .background_timeline .tl_contus .img6{margin-top: -55px;}
+     .overview_page .background_timeline .tl_contus .img7{margin-top: 14px;}
+     .overview_page .background_timeline .tl_contus .img8{margin-top: -27px;}    
+}
+@media (min-width:679px) and (max-width:770px){
+	.overview_page .bottom {position:absolute;left: 0;}
+	.overview_page .fourth_section .cbp-rfgrid.bottom li {width: -webkit-calc(100% / 4);width: calc(100% / 4);}
+	.overview_page .fourth_section .cbp-rfgrid.bottom li.last-t{margin-left:0}
+}
+@media screen and (max-width:678px){
+  	.overview_page .bottom{width:100%}
+  	.overview_page .cbp-rfgrid {width:100%}
+  	.overview_page .fourth_section .cbp-rfgrid,.overview_page .bottom {width:100%}
+  	.overview_page .fourth_section .cbp-rfgrid li, .overview_page .fourth_section .bottom li.last{margin: 0 auto;float: none;}
+  	.overview_page .fourth_section .cbp-rfgrid li, .overview_page .fourth_section .bottom li,
+  	.overview_page .fourth_section .cbp-rfgrid.bottom li{width: calc(100% / 3);width: -webkit-calc(100% / 3);float: left;clear: none;}
+  	.overview_page .fourth_section .cbp-rfgrid.bottom li.last-t{margin-left:0}
+  	.overview_page .fifth_section .cbp-rfgrid li.move-l{margin-left:20%}
+} 
+@media screen and (max-width:640px){
+	.headerhome {background:url('http://img.contus.com/new_images/overview/overview-banner.jpg') no-repeat center;-webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;}
+	video,.home-page-banner .transparent,.dot {display: none;}
+	
+    .overview_page .wrapper{margin:0 auto; width:100%;}
+     
+    .overview_page .three-col{width:100%;overflow: hidden;text-align: center;padding:40px 0px 0px 0px;}
+	.overview_page .three-col li{width:100%;}
+	.overview_page .three-col li p{padding:0 0px 0 0}
+	.overview_page .three-col li:nth-child(2){padding:0;}
+    .overview_page .fifth_section .cbp-rfgrid li .img3 {background-position: 0% 3.89%;}
+    .overview_page .fifth_section .cbp-rfgrid li .img11 {background-position: 0% 19.42%;}
+    .overview_page .fifth_section .cbp-rfgrid li .img14 {background-position: 0% 25.241%;}
+    .overview_page .fifth_section .cbp-rfgrid li .img49 {background-position: 0% 93.22%;}
+  
+    .overview_page .second_part ul li{width:100%;}
+    .overview_page .second_part ul li .bord_img{display:none;}
+    
+    /* timeline style starts here */
+    .overview_page .tl_contus li {width:100%;float:none;overflow: hidden;}
+    .overview_page .time_years{text-align:center;}
+    .overview_page .time_years span{}
+    .overview_page .background_timeline .tl_contus i{display: none}
+    
+    .overview_page .tl_first,.overview_page .tl_third,
+    .overview_page .tl_fifth,.overview_page .tl_seventh,
+    .overview_page .tl_ninth,.overview_page .tl_eleven{margin:20px 0;text-align:right;padding: 0}
+	.overview_page .tl_second,.overview_page .tl_fourth,
+	.overview_page .tl_sixth,.overview_page .tl_eight,
+	.overview_page .tl_tenth,.overview_page .tl_tweth{margin:20px 0;text-align:left;padding: 0}
+	.overview_page .tl_fourth h2{margin-top: 22px;padding: 0}
+	.overview_page .tl_million{display: none}
+	.overview_page .tl_contus li.tl_seventh{text-align: left;}
+	.overview_page .tl_contus li.tl_seventh h2,.overview_page .tl_contus li.tl_seventh p{margin: 0;padding: 0}
+    .overview_page .tl_first h2{padding:0px 170px 0px 0px;margin:0;}
+    .overview_page .tl_first p{padding:0 170px 0px 0px;}
+
+    .overview_page .tl_second p{padding:30px 0px 0 150px;}
+    
+    .overview_page .tl_third h2{padding:0px 150px 0px 0px;margin:0;}
+    .overview_page .tl_third p{padding:0 150px 0 0px;}
+
+    .overview_page .tl_fourth p{padding:0px 0px 0px 0px;}
+  
+    .overview_page .tl_fifth p{padding:32px 170px 0 0px;}
+    .overview_page .tl_fifth p span{font-family: 'proxima_novasemibold';font-size:18px;color:#000;}
+    
+    .overview_page .tl_sixth h2{margin:0;padding:10px 0 0 0;}
+    .overview_page .tl_sixth p{padding:0 0px 0 0px;}
+  
+    .overview_page .tl_seventh h2{padding:0px 80px 0px 0px;margin:0;font-family: 'proxima_novasemibold'!important;font-size:32px!important;}
+    .overview_page .tl_seventh p{padding:0 80px 0 0px;}
+   
+    .overview_page .tl_eight h2{padding:10px 0 0 0;margin:0;}
+    .overview_page .tl_eight p{padding:0 0px 0 0px;}
+  
+    .overview_page .tl_ninth h2{padding:0px 170px 0px 0px;margin:0;}
+    .overview_page .tl_ninth p{padding:0 170px 0px 0px;}
+    
+    .overview_page .tl_tenth h2{padding:30px 200px 0px 0px;margin:0;}
+    .overview_page .tl_tenth p{padding:0 197px 0px 100px;}
+    
+    .overview_page .tl_eleven h2{padding:0px;}
+    .overview_page .tl_eleven p{padding:0px;}
+    
+    .overview_page .glance {padding:0;  margin: 20px 0;}
+    .round {  display: none;}
+    .second_part ul{padding-bottom: 15px;}
+    .overview_page .second_part ul li {min-height: 100%;}
+	
+	.over-content-part-right, 
+	.over-content-part-left {position: relative;text-align: center;background: #fff;margin: 20px 0;width: auto;padding: 10px;float: none}
+    .over-content-part-left .outercolor,
+    .over-content-part-right .outercolor{display: none !important}
+    
+    .overview_page .man_team {margin: 19px 5px;padding: 0;}
+    .overview_page .man_team h4 {line-height: 36px;}
+   	
+   	.overview_page .man_team span {font-size: 20px;}
+	.overview_page .second_part li {width: 97%;}
+	
+	.overview_page .first_section {padding:20px;box-sizing: border-box;}
+	.overview_page .glance-b {margin: 20px 0;}
+
+	/* timeline style starts here */
+    .overview_page .second_part ul li:nth-child(2){ border-left:none;}
+    .overview_page .second_part ul li:nth-child(3){ border-right:none;border-left:none!important;}
+    
+    .overview_page .first_heading p span{padding:0px!important;}
+   
+    .overview_page .cbp-rfgrid li div h3{font-size:15px!important;margin:20px 0 0 0;}
+	.overview_page .cbp-rfgrid li div p{font-size:13px;margin-bottom:40px;}
+	.overview_page .bottom{width: 100%}
+    .overview_page .fourth_section .cbp-rfgrid li,.overview_page .fourth_section .bottom li{width: 70.2%;margin: 0 auto;display: block;float: none;}
+	.overview_page .fifth_section .cbp-rfgrid li {width: 25%;width: -webkit-calc(100% / 4);width: calc(100% / 4);}
+
+	.overview_page .seventh_section .membership{width:300px;margin:0 auto;}
+	.overview_page .seventh_section .membership li .sm_clas{display:block;}
+	.overview_page .seventh_section .membership li{width:300px;text-align:center;}
+	.overview_page .seventh_section .membership li h3{text-align:center;}
+	.overview_page .seventh_section .membership {padding:0}
+	.overview_page .intro .border {width: 56%;padding-bottom: 4px;}
+	.overview_page .nasscom{margin: 10px 43px;}
+	.overview_page .industry {margin: 8px 32px;}
+	
+	.overview_page .seventh_section .membership li:nth-child(1) p{padding:0;}
+	.overview_page .seventh_section .membership li:nth-child(2) p{padding:0}
+	.overview_page .seventh_section .membership li .lg_clas{display:none;}
+	.overview_page .fourth_section .cbp-rfgrid,.overview_page .bottom{width:100%;position: relative;left: 0}
+  	.overview_page .fourth_section .cbp-rfgrid.plain {position: absolute;bottom: 0;}
+}
+@media screen and (max-width:680px){
+	.headerhome {background:url('http://img.contus.com/new_images/overview/overview-banner.jpg') no-repeat center;-webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;}
+	video,.home-page-banner .transparent,.dot {display: none;}
+	.home-page-banner h1 {font-size:80px;}
+	
+  	.overview_page .bottom, .overview_page .fourth_section .cbp-rfgrid {width:100%;margin: 0 auto;}
+  	.overview_page .fourth_section .cbp-rfgrid li, .overview_page .fourth_section .bottom li.last{}
+  	.overview_page .fourth_section .cbp-rfgrid li, .overview_page .fourth_section .bottom li {width: -webkit-calc(100% / 3);width: calc(100% / 3);float: left;clear: none;}
+  	.overview_page .fourth_section .cbp-rfgrid.bottom li {width: -webkit-calc(100% / 4);width: calc(100% / 4);}
+  	.overview_page .cbp-rfgrid {width:100%;}
+  	.overview_page .fourth_section {background:none;}
+  	.overview_page .fifth_section .cbp-rfgrid li {width: 25%;width: -webkit-calc(100% / 6);width: calc(100% / 6);}
+  	
+  	.overview_page .second_part li i {  margin: 5px auto 0;}
+  	.overview_page .second_part li h1 {  margin: 0 10px;}
+  	.overview_page .second_part li {  border: 0;  float:none;margin: 0 auto 30px;min-height:100%; width: 100%}
+  	.overview_page .tl_contus li.tl_ninth h2{margin-top: 20px;}
+  	.overview_page .tl_contus li.tl_eleven{text-align: left;}
+  	.overview_page .second_part li strong {  margin: 11px 0 6px;}
+  	.overview_page .fourth_section .cbp-rfgrid li img {height: auto;}
+  	.home-page-banner .linein .round {left: -182%;}
+} 
+@media screen and (max-width:599px){
+	.overview_page .tl_mob {margin: 0;}
+ 	.overview_page .man_team .border {width: 44%;margin: 8px auto;}
+ 	.overview_page .fifth_section .cbp-rfgrid li.move-l{margin-left:20%}
+}
+@media screen and (max-width:480px){
+	.headerhome {background:url('http://img.contus.com/new_images/overview/overview-banner.jpg') no-repeat center;-webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;}
+	video,.home-page-banner .transparent,.dot {display: none;}
+	
+ 	.overview_page .fourth_section .cbp-rfgrid li{width: calc(100% / 2);width: -webkit-calc(100% / 2);}
+ 	.overview_page .fourth_section .cbp-rfgrid.bottom li{width: calc(100% / 2);width: -webkit-calc(100% / 2);}
+ 	.overview_page .bottom, .overview_page .fourth_section .cbp-rfgrid {width:100%}
+ 	.overview_page .cbp-rfgrid {width:100%;}
+ 	.overview_page .fifth_section .cbp-rfgrid li {width: 25%;width: -webkit-calc(100% / 5);width: calc(100% / 5);}
+ 	
+ 	.overview_page .tl_mob {margin: 0;}
+ 	.overview_page .man_team .border {width: 44%;margin: 8px auto;}
+
+ 	
+ 	.overview_page .fifth_section .cbp-rfgrid li.move{margin-left:30%}
+ 	.overview_page .fourth_section .cbp-rfgrid.bottom li.last{float: none;margin: 0 auto}
+ 	.overview_page .fifth_section .cbp-rfgrid li.move-l,.overview_page .fourth_section .cbp-rfgrid.bottom li.last-t{margin-left: 0;}
+ 	.overview_page .fourth_section .cbp-rfgrid,.overview_page .bottom{width:100%;position: relative;left: 0}
+  	.overview_page .fourth_section .cbp-rfgrid.plain {position: absolute;bottom: 0;}
+}
+@media screen and (max-width:400px){
+  	.overview_page .cbp-rfgrid {width:100%}
+  	
+   	.overview_page .tl_contus li.tl_sixth h2{margin:0}
+  	.overview_page .tl_contus li {margin-bottom: 16px;padding: 0}
+  	
+  	.overview_page .second_part li i {  margin: 5px auto 0;}
+  	.overview_page .second_part li h1 {  margin: 0 10px;}
+  	.overview_page .second_part li {  border: 0;  float:none;margin: 0 auto 30px;min-height:100%; }
+  	.overview_page .tl_contus li.tl_ninth h2{margin-top: 20px;}
+  	.overview_page .tl_contus li.tl_eleven{text-align: left;}
+  	.overview_page .second_part li strong {  margin: 11px 0 6px;}
+  	    	  	
+  	.overview_page .fourth_section .cbp-rfgrid,.overview_page .bottom{width:225px;margin: 0 auto;}
+  	.overview_page .fourth_section .bottom li.last {float: left;margin: 0}
+  	.overview_page .fourth_section .cbp-rfgrid li {width: calc(100% / 1.01);}
+  	.overview_page .fourth_section .cbp-rfgrid.bottom li {width: -webkit-calc(100% / 1);width: calc(100% / 1);}
+  	.overview_page .fifth_section .cbp-rfgrid li {width: 25%;width: -webkit-calc(100% / 4);width: calc(100% / 4);}
+  	.overview_page .fifth_section .cbp-rfgrid li.move-l,.overview_page .fifth_section .cbp-rfgrid li.move{margin-left:0}
+}
+@media screen and (max-width:385px){
+  	.overview_page .cbp-rfgrid {width:100%}
+  	
+   	.overview_page .tl_contus li.tl_sixth h2{margin:0}
+  	.overview_page .tl_contus li {margin-bottom: 16px;padding: 0}
+  	
+  	.overview_page .second_part li i {  margin: 5px auto 0;}
+  	.overview_page .second_part li h1 {  margin: 0 10px;}
+  	.overview_page .second_part li {  border: 0;  float:none;margin: 0 auto 30px;min-height:100%; }
+  	.overview_page .tl_contus li.tl_ninth h2{margin-top: 20px;}
+  	.overview_page .tl_contus li.tl_eleven{text-align: left;}
+  	.overview_page .second_part li strong {  margin: 11px 0 6px;}
+  	    	  	
+  	.overview_page .fourth_section .cbp-rfgrid,.overview_page .bottom{width:100%;position: relative;left: 0}
+  	.overview_page .fourth_section .cbp-rfgrid.plain {position: absolute;bottom: 0;}
+  	.overview_page .fourth_section .bottom li.last {float: none;margin: 0 auto;}
+  	.overview_page .fourth_section .cbp-rfgrid li {width: calc(100% / 2);}
+  	.overview_page .fourth_section .cbp-rfgrid.bottom li {width: -webkit-calc(100% / 2);width: calc(100% / 2);}
+  	.overview_page .fifth_section .cbp-rfgrid li {width: 25%;width: -webkit-calc(100% / 4);width: calc(100% / 4);}
+}

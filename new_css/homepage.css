@@ -1,0 +1,295 @@
+.home-page-sprite{background: url(../new_images/home-sprite.png) no-repeat;}							
+.home-page-banner {position: relative;clear: both;float: left;width: 100%;height:100%;text-align: center;overflow: hidden;}
+_::-moz-svg-foreign-content, :root .home-page-banner  {background: url(./new_images/banner-new-ie.jpg) no-repeat;}
+.home-page-banner .big-video-vid_html5_api{width: 100%;}
+.home-page-banner h1 {position: absolute;top:40%;line-height: 60px;color: #FFF;text-align: center;width: 100%;font-size: 52px;font-weight: bold;z-index: 99;}
+.home-page-banner .content{display: block;background-position:-370px -248px;width:187px;height:28px;margin: 18px auto}
+.home-page-banner .transparent{display:block;background: rgba(0, 0, 0, 0.4);height: 100%;width: 100%;position: absolute;}
+.homepage_tab{margin:0;overflow:hidden;clear: both;}
+
+.blending_technologies_wrap{padding:50px 20px;box-sizing: border-box;overflow: hidden;text-align: center;background: #EFF2F6;}
+.blending_technologies{width: 1090px;margin: 0 auto;}
+.blending_technologies h3{margin-bottom: 0}
+.blending_technologies h3 span{font-size: 18px;color: #333333;line-height: 23px;display: block;width: 493px;margin: 10px auto;}
+.blending_technologies ul{overflow: hidden;clear: both;margin-top:45px;}
+.blending_technologies li{float: left;width: 272px;}
+.blending_technologies ul i{display: block;margin: 33px auto 7px;height:62px;width:71px;}
+.blending_technologies .social-ic{background-position:-4px -396px}
+.blending_technologies .mobility-ic{background-position:-76px -396px}
+.blending_technologies .analytics-ic{background-position:-156px -396px}
+.blending_technologies .cloud-ic{background-position:-228px -396px}
+
+.blending_technologies ul p{font-size: 22px;color: #000;font-family: 'arial';}
+.blending_technologies .small{font-size: 16px;font-family: 'arial';display: block;}
+
+.happy-clients-logo-wrap{box-sizing: border-box;width:100%;position: absolute;bottom: 0;padding: 7px 0;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);background: rgba(0, 0, 0, .45);z-index: 99;}
+.happy-clients-logo{width: 1090px;margin: 0 auto;overflow: hidden;}
+.happy-clients-logo li{float: left;margin: 0 18px;}
+.happy-clients-logo li p{color: #FFF;font-size:36px;line-height: 26px;margin: 0;margin-top:12px;font-family: 'arial';}
+.happy-clients-logo p span{font-size:20px;display: block;font-family: 'arial';}
+.happy-clients-logo i{display: block;margin: 17px 0;height:36px;}
+.happy-clients-logo .mahindra-logo{width: 148px;background-position:-2px -32px;height: 45px;}
+.happy-clients-logo .stage-logo{width: 180px;background-position:-149px -37px}
+.happy-clients-logo .accenture-logo{width:121px;background-position:-332px -1px;margin-top: 10px;}
+.happy-clients-logo .worldbank-logo{width: 144px;background-position:-453px 0;}
+.happy-clients-logo .cbazaar-logo{width: 153px;background-position:-335px -418px}
+
+.homepage_tab .whats-new-wrap{padding: 35px 20px;overflow: hidden;clear: both;border-bottom: 1px solid #ebf4ff;border-top: 1px solid #ebf4ff;}            
+.homepage_tab .whats-new{width: 1090px;margin: 0 auto;}
+.homepage_tab .whats-new ul{clear: both;}
+.whats-new ul li{float: left;margin: 0 22px;width:319px;position: relative;}
+.whats-new .ajaxCon{width: 100%}
+.whats-new ul a{font-family: 'georgia';color: #000;font-size:18px;display: block;text-align: left;margin:8px auto;position: relative;}
+.whats-new ul a:hover{color: #146db8;}
+.whats-new .new-img1{background-position: 0 -5px;width: 271px;height: 103px;display: block;margin-bottom: 13px;}
+.whats-new .new-img2{background-position: 0 -116px;width: 271px;height: 103px;display: block;margin-bottom: 13px;}
+.whats-new .new-img3{background-position: 0 -223px;width: 271px;height: 103px;display: block;margin-bottom: 13px;} 
+.whats-new .readmore{display: none;}
+.whats-new .bottom{box-sizing: border-box;position: absolute;border-radius: 5px;background: #FFF;width: 40px;bottom: 20px;right: 20px;text-align: center;border: 1px solid #C3C3C3;}
+.whats-new .bottom .date{width:30px;overflow: hidden;display: block;margin: 0 auto;font-size: 10px;text-transform: uppercase;}
+.whats-new .date span{font-weight: bold;font-size: 17px;clear: both;display: block;line-height: 15px;height: 22px;}
+.homepage_tab .whats-new .more{clear: both;box-sizing: border-box;font-family: 'arial';border-radius: 5px;border: 2px solid #0095da;color: #0095da;font-size: 15px;text-align:center;padding:9px 0;width: 161px;margin:10px auto 0;display: block;line-height: 22px;margin-bottom: 13px;transition: 0.5s ease;}             
+.homepage_tab .whats-new .more:hover{background:#0095da;color: #FFF}
+.whats-new .blogs{width: 100%}
+
+.winning-wrap{width: 100%;background: #eff2f6;}
+.homepage_tab .winning{width: 1090px;margin: 0 auto}	
+.homepage_tab .winning ul{clear: none;}	
+.homepage_tab .winning li{box-sizing: border-box;width: 255px;padding:35px 0;margin:0 5px 5px 0;float: left;width: 250px\9;}
+.winning li i{display: block;margin: 0 auto;height: 74px;}
+.homepage_tab .winning-wrap .winning-img{background-position: 0 -227px;width: 58px;height: 55px;float: right;}
+.winning .source-line{background-position: -1px -317px;width: 141px;}
+.winning .esparks{background-position: -145px -315px;width: 134px;}
+.winning .sme{background-position:-465px -317px;width: 137px;}
+.winning .red{background-position: -627px -316px;width: 75px;}
+.winning .bma{background-position: -283px -320px;width: 77px;}
+.winning .bwda{background-position: -367px -316px;width: 95px;}
+.winning-wrap .main-img{margin:77px 50px;font-size: 32px;color: #494848;line-height: 40px;text-align: right;float: left;}
+.winning-wrap .main-img span{display: block;width: 164px;clear: both;}
+.winning-wrap .logoone{background: #f4f7fd;}
+.homepage_tab .winning-wrap .logotwo{background: #FFF}
+.homepage_tab .winning-wrap .logothree{background: #f4f7fd}
+.homepage_tab .winning-wrap .logofour{background: #FFF;margin-bottom: 0}
+.homepage_tab .winning-wrap .logofive{background: #f4f7fd;margin-bottom: 0}
+.homepage_tab .winning-wrap .logosix{background: #FFF;margin-bottom: 0}
+ 
+.homepage_tab .global-community-wrap{padding:58px 0;overflow: hidden;clear: both;}
+.homepage_tab .global-community{width:980px;margin: 0 auto;}
+.global-community-wrap .global-community h3{margin-bottom:30px;}
+.homepage_tab .global-community ul{clear: both;}
+.homepage_tab .global-community li{float: left;margin:0 10px;}
+.global-community ul i{display: block;width: 197px;height:63px;}
+.global-community .amazon-logo{background-position:4px -70px;}
+.global-community .paypal-logo {background-position: -191px -71px;margin-top: 9px;height: 54px;}
+.global-community .sybase-logo{background-position:-376px -71px;}
+.global-community .nasscom-logo{background-position:25px -132px;}
+.global-community .cii-logo{background-position:-590px -81px;width: 90px;}
+ 			 
+.homepage_tab .happy-clients-wrap{padding:42px 0;clear: both;text-align: center;background: #f3f5f9;border-top:1px solid #eaf0f3}
+.homepage_tab .happy-clients{width: 1090px;margin: 0 auto;position: relative;}
+.homepage_tab .happy-clients .comma{position: absolute;width:57px;height:53px;float: left;background-position:-93px -254px;top: -25%;left: 2%;}
+.homepage_tab .happy-clients ul{clear: both;overflow: hidden;margin-top: 14px;}
+.happy-clients ul li{float: left;margin:0 56px;width: 160px;}
+.happy-clients .clientone{background-position:-198px -137px;}
+.happy-clients .clienttwo{background-position: -300px -137px}
+.happy-clients .clientthree{background-position:-401px -137px;}
+.happy-clients .clientfour{background-position:-501px -137px;}
+.happy-clients ul p{font-size: 14px;color: #01669a;margin: 0;}
+.happy-clients ul span{font-family: 'georgia';color: #808a94;margin-top: 2px;display: block;line-height: 18px;font-size: 14px;}
+.happy-clients ul strong{display: block;}
+.happy-clients ul i{margin: 0 auto 10px;width:100px;height:99px;display: block;}
+ 
+.homepage_tab .metrics-wrap{padding:70px 20px;box-sizing: border-box;clear: both;position: relative;text-align: center;}
+.homepage_tab .metrics{width: 1090px;margin: 0 auto;}
+.homepage_tab .metrics li{float: left;margin: 0 23px;}
+.homepage_tab .metrics .none{border-right:none}
+.homepage_tab .metrics .ic-one{background-position:-280px -264px}
+.homepage_tab .metrics .ic-two{background-position:-586px -245px}
+.homepage_tab .metrics .ic-three{background-position:-187px -254px}
+.homepage_tab .metrics .ic-four{background-position:-538px -416px}
+.homepage_tab .metrics .ic-five{background-position:-630px -409px}
+.homepage_tab .metrics h4{font-family: 'arial';margin:0;color: #000;line-height: 33px;text-align: left;overflow: hidden;}
+.metrics h4 span{font-size: 36px;float: left;}
+.metrics .big-cont{font-size:16px;line-height: 17px;margin-left:6px;font-family: 'georgia';width: 95px;float: right;}
+.metrics .big{width: 128px;}
+.homepage_tab .metrics i{width:54px;height:51px;display: block;margin: 0 auto 15px;}
+ 
+.homepage_tab .company-profile{box-sizing: border-box;background: #f6f9fc;border-bottom: 1px solid #eeeeee;border-top: 1px solid #eeeeee;padding:40px 0}
+.homepage_tab .company-profile .company-profilein{width: 1090px;margin: 0 auto;text-align: center;}
+.company-profile .company-profilein h3{margin-bottom: 10px;}
+.company-profile .company-profilein p{font-size: 18px;color: #272727;line-height: 24px;margin-bottom:15px;}
+.company-profile .company-profilein a{box-sizing: border-box;color: #da2626;border:2px solid #da2626;border-radius: 4px;padding: 13px 0;font-size: 15px;font-family: 'arial';display: block;width: 206px;margin: 0 auto;line-height: 20px;transition: 0.5s ease;}
+.company-profile .company-profilein a:hover{color: #FFF;background: #da2626}
+         
+.scrollMouse {position: absolute;bottom:120px;width:26px;height:59px;text-align: center;z-index: 1;background-position:-120px -36px;left:50%;margin-left: -13px;}
+.scrollMouse .scrollline {display: block;margin:10px auto;z-index: 11;bottom:0;width: 4px;height: 10px;border-radius: 5px;background: #00c6ff;-webkit-animation: aniMouse 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;-moz-animation: aniMouse 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;-o-animation: aniMouse 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;animation: aniMouse 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;position: relative;}
+@-webkit-keyframes aniMouse{1%{bottom:10px}50%{bottom:-20px}100%{bottom:7px}}@-moz-keyframes aniMouse{1%{bottom:10px}50%{bottom:-20px}100%{bottom:7px}}@-o-keyframes aniMouse{1%{bottom:10px}50%{bottom:-20px}100%{bottom:7px}}@keyframes aniMouse{1%{bottom:10px}50%{bottom:-20px}100%{bottom:7px}}
+.home_mobile_banner{background: url(../new_images/banner-new-ie.jpg) 60%  no-repeat;margin-top: -47px;height: 520px !important;background-size:cover;}
+.nav .dropdown.home_ic{display: none}
+
+/*** Mobile Responsive ***/
+       
+@media screen and (max-width:1024px){ 
+	.home-page-banner{background: url(../new_images/banner-new-ie.jpg) 60%  no-repeat;margin-top: -47px;height: 520px !important;background-size:cover;}
+	.home-page-banner video{display: none}
+	.blending_technologies_wrap{padding: 0}
+	.blending_technologies{width: 100% }
+	.homepage_tab .whats-new{width: 100%}
+	.homepage_tab .metrics{width: 100%}
+	.homepage_tab .winning{width: 100% } 
+	.homepage_tab .happy-clients{width: 100%}
+	.homepage_tab .global-community{width: 100%}
+	.homepage_tab .company-profile .company-profilein{width: 100%}
+	.footer .footer-wrap{width: 100%}
+}
+@media (min-width:801px)and (max-width:1024px){			    
+    .homepage_tab .global-community{width: 978px;}
+	.happy-clients-logo {width:850px;height: 73px;overflow: hidden;}
+	.happy-clients-logo li {margin: 0 14px;}
+	.blending_technologies ul{width:980px;margin: 0 auto}
+	.blending_technologies ul li{width: 25%}
+	.homepage_tab .whats-new ul{width:980px;margin: 0 auto}
+	.whats-new ul li{margin:0 7px;width:312px; }
+	.whats-new img{width:312px}
+	.homepage_tab .metrics {width:960px}
+	.homepage_tab .metrics li {margin: 0 10px;}
+	.homepage_tab .happy-clients ul{width:980px;margin: 0 auto}
+	.happy-clients ul li {margin: 0 42px;}
+	.homepage_tab .winning {width: 722px;margin: 0 auto;}
+	.homepage_tab .winning li {width: 171px;}
+	.homepage_tab .winning-wrap .main-img{margin: 77px 15px;}
+}
+@media screen and (max-width:1050px){
+	.happy-clients-logo {width: 980px}
+	.happy-clients-logo li {margin: 0 9px;}
+	.nav .dropdown .home{display: none}
+	.blending_technologies{width: 980px}
+	.blending_technologies li {width: 237px;}
+	.homepage_tab .whats-new{width: 980px}
+	.whats-new ul li {margin: 0 3px;}
+	.homepage_tab .metrics{width: 980px}
+	.homepage_tab .metrics li {margin: 0 12px;}
+	.homepage_tab .winning{width: 980px}
+	.homepage_tab .winning li {width: 223px;width: 220px\9;}
+	.homepage_tab .happy-clients{width: 980px}
+	.happy-clients ul li {width: 131px;}
+}
+@media screen and (max-width:1024px){
+    .fixed-tab .dropdown .brand{display: none}
+    .fixed-tab{display: none}
+}
+@media (min-width:641px)and (max-width:800px){	
+	.header_container h1 a.logo {background-position: -1px 0;width: 330px;height: 28px;background-size: auto;}
+	.home-page-banner h1{line-height: 35px;font-size: 30px;}
+	.happy-clients-logo {width:630px;height: 73px;overflow: hidden;}
+	.happy-clients-logo li {margin: 0 8px;}
+	
+	.blending_technologies ul li {width: 25%;}
+	.blending_technologies ul{width:630px;margin: 0 auto;}
+	.whats-new ul li{margin: 0;width:100%;margin-bottom:35px;}
+	.whats-new img{width:100%}
+	.whats-new ul a{margin: 0 auto}
+	
+	.homepage_tab .metrics{width: 630px;margin: 0 auto}
+	.homepage_tab .metrics li {margin: 0 19px;}
+	.homepage_tab .metrics .fifty{margin: 43px 58px 15px;}
+	.winning-wrap{display: none;}
+	.homepage_tab .global-community ul{width: 630px;margin: 0 auto}
+	.homepage_tab .global-community li {margin: 0 6px;}
+	.homepage_tab .global-community .nasscom-logo, .homepage_tab .global-community .cii-logo{display: none}
+		
+	.homepage_tab .happy-clients ul{width: 630px;margin: 0 auto}
+	.homepage_tab .happy-clients li {margin: 0 24px;width: 24%;}
+	.homepage_tab .happy-clients .last{display: none}	
+}
+@media only screen (min-width:768px){
+    .homepage_tab .winning {width: 722px;margin: 0 auto;}
+	.homepage_tab .winning li {width: 171px;}
+	.homepage_tab .winning-wrap .main-img{margin: 77px 15px;}
+	.winning-wrap{display: block;}
+	.happy-clients-logo {width:700px;height: 73px;overflow: hidden;}
+}
+@media only screen (min-width:980px){
+	.header_container .logo{width: 280px;background-size: 280px;margin-top: 5px;}
+}
+@media screen and (max-width:850px){
+	.happy-clients-logo li {margin: 0 27px;}
+	.blending_technologies{width: 100%;margin: 35px auto;}
+	.homepage_tab .metrics{width: 576px}
+	.homepage_tab .happy-clients{width: 100%}
+	.homepage_tab .whats-new{width: 100%}
+	.happy-clients h3{margin-bottom: 30px;}
+	.metrics .big-cont{width:100%}
+	.homepage_tab .metrics h4{text-align: center;}
+	.metrics h4 span{float: none}
+	.homepage_tab .metrics li,.homepage_tab .metrics .fifty{margin: 15px 26px;width: 24%;}
+	.blending_technologies h3 {padding: 0 20px;}
+	.home-page-banner h1 {padding: 0 20px;box-sizing: border-box;}
+}
+@media screen and (max-width:640px){	
+	.happy-clients-logo{margin: 0 auto;width: 334px;}
+	.happy-clients-logo li p{font-size: 26px;}
+	.home-page-banner h1 {top:34%;font-size: 30px;line-height: 40px;}
+	.happy-clients-logo .accenture-logo, .happy-clients-logo .worldbank-logo{display: none} 
+	.happy-clients-logo li span{float: right;}
+	.happy-clients-logo li{margin:0 24px}
+	.happy-clients-logo li:first-child{display: block;margin: 0 auto;width:194px;float: none;}
+	.happy-clients-logo .mahindra-logo {width: 104px;background-position: -2px -28px;background-size: 504px;height: 14px;margin-top: 20px;}
+	.happy-clients-logo .stage-logo {width: 122px;background-position: -105px -26px;background-size: 488px;height: 23px;}
+	.home-page-banner .content {background-position: -189px -122px;width:98px;background-size: 363px;height: 19px;margin: 2px auto;}
+	.blending_technologies ul i {margin: 10px auto 7px;}
+	.blending_technologies h3 span{width: auto;font-size: 16px;font-family: 'georgia';line-height: 22px;}
+	.blending_technologies ul i {height:45px;width: 45px;}
+	.blending_technologies .social-ic {background-position:-2px -232px;background-size: 418px;}
+	.blending_technologies .mobility-ic {background-position: -44px -232px;background-size: 415px;}
+	.blending_technologies .analytics-ic {background-position:-88px -232px;background-size: 415px;}
+	.blending_technologies .cloud-ic {background-position:-132px -232px;background-size: 415px;}
+	.blending_technologies ul li {width:42%;min-height: 161px;margin: 0 10px;}
+	.blending_technologies ul p{font-size: 16px;margin: 0}
+	.blending_technologies ul span{font-size: 15px;line-height: 19px;}
+	.whats-new ul li {margin: 0;width: auto;}
+	.whats-new img{width: 100%}
+	.whats-new ul a{margin: 0 auto 5px;width: 256px;}
+	.homepage_tab .whats-new ul {height: 160px;overflow: hidden;}
+	.homepage_tab .whats-new {width: 270px;}
+	.homepage_tab .whats-new h3{margin-bottom: 15px;}
+	.homepage_tab .metrics-wrap{background: #f6f9fc;padding: 21px 15px;}
+	.homepage_tab .metrics h4{font-size: 26px;text-align: center;}
+	.metrics h4 span{display: block;float: none;font-size: 27px;}
+	.metrics .big-cont{width: 100%;font-size: 14px;}
+	.homepage_tab .metrics .fifty{width:22%;margin-left: 16px;}
+	.homepage_tab .metrics li {width:22%;min-height: 85px;margin: 15px 18px;}
+	.happy-clients ul span{font-family: 'proxima_nova_rgregular';}
+	.global-community-wrap .global-community h3 {margin-bottom: 15px;}				
+	.global-community ul i {width: 120px;height: 32px;}
+	.global-community ul li {margin: 0 9px;}
+	.global-community .amazon-logo {background-position: 4px -46px;background-size: 431px;}
+	.homepage_tab .global-community .paypal-logo {background-position: -152px -55px;background-size: 516px;height: 30px;margin: 0}
+	.global-community .sybase-logo, .global-community .nasscom-logo, 
+	.global-community .cii-logo{display: none;}
+	.homepage_tab .global-community ul {margin: 0 auto;width: 277px;}
+	.homepage_tab .happy-clients .comma {width: 26px;height: 25px;background-position: -39px -107px;background-size: 303px;}
+	.homepage_tab .happy-clients ul {height: 162px;margin-top: 0;overflow: hidden;}
+	.happy-clients ul li {display: block;margin: 10px auto;float: none;}
+	.homepage_tab .happy-clients-wrap{padding:47px 0;}
+	.homepage_tab .happy-clients h3{width: 190px;margin: 0 auto}
+	.homepage_tab .global-community-wrap {padding: 58px 8px;}
+	.homepage_tab .company-profile {width:auto;padding: 35px 9px;box-sizing: border-box;}
+	.homepage_tab .whats-new li{width: 270px}
+	.winning-wrap{display: none}
+	.header_container h1 .logo {width: 219px;height: 18px;background-size: 190px;display: block;}
+	.happy-clients-logo .cbazaar-logo{display: none}
+	.homepage_tab .global-community li {margin: 0 9px;}
+	.blending_technologies li {width: 43%;}
+	.homepage_tab .metrics{width:500px}
+	
+	.homepage_tab .metrics .second{margin-left: 41px;}
+}
+@media screen and (max-width:520px){
+	.homepage_tab .metrics {width:400px;}
+}
+@media screen and (max-width:420px){
+	.homepage_tab .metrics {width:300px;}
+	.homepage_tab .metrics li,.homepage_tab .metrics .fifty{width:34%;}
+	.homepage_tab .metrics .second {margin-left: 19px;}
+}
