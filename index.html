@@ -19,101 +19,8 @@
 <body>
     <div class="container main-wrapper clearfix">
         <script src="./js/common_functions.js" type="text/javascript"></script>
-        <script>
-        //Header Fixed
-
-        (function($) {
-            $.fn.tmStickUp = function(options) {
-
-                    var getOptions = {
-                        corectionValue: 0
-                    }
-                    $.extend(getOptions, options);
-
-                    var
-                        _this = $(this),
-                        _window = $(window),
-                        _document = $(document),
-                        thisOffsetTop = 0,
-                        thisOuterHeight = 0,
-                        thisMarginTop = 0,
-                        documentScroll = 0,
-                        pseudoBlock, lastScrollValue = 0,
-                        scrollDir = '',
-                        tmpScrolled, gridWidth = 0,
-                        tmpTop = 0;
-
-                    init();
-
-                    function init() {
-                        parentContainer = _this.parent();
-                        thisOffsetTop = parseInt(_this.offset().top);
-                        thisMarginTop = parseInt(_this.css("margin-top"));
-                        thisOuterHeight = parseInt(_this.outerHeight(true));
-                        gridWidth = parseInt($('.container').width());
-
-                        $('<div class="pseudoStickyBlock"></div>').insertAfter(_this);
-                        pseudoBlock = $('.pseudoStickyBlock');
-                        pseudoBlock.css({
-                            "position": "absolute",
-                            "display": "block"
-                        });
-
-                        _this.on("rePosition",
-                            function(e, d) {
-                                tmpTop = d;
-                                _document.trigger('scroll');
-                            }
-                        )
-
-                        addEventsFunction();
-                    } //end init
-
-                    function addEventsFunction() {
-                        _document.on('scroll', function() {
-
-                            tmpScrolled = $(this).scrollTop();
-                            if (tmpScrolled > lastScrollValue) {
-                                scrollDir = 'down';
-                            } else {
-                                scrollDir = 'up';
-                            }
-                            lastScrollValue = tmpScrolled;
-
-                            documentScroll = parseInt(_document.scrollTop());
-                            if (thisOffsetTop - thisMarginTop < documentScroll) {
-                                _this.addClass('isStuck');
-                                _this.css({
-                                    position: "fixed",
-                                    top: tmpTop,
-                                    zIndex: 9999999999,
-                                    left: 0,
-                                    right: 0,
-                                    margin: "0 auto",
-                                    padding: "0"
-                                })
-                                pseudoBlock.css({
-                                    "height": thisOuterHeight
-                                });
-                            } else {
-                                _this.removeClass('isStuck');
-                                _this.css({
-                                    position: "absolute",
-                                    top: 0
-                                });
-                                pseudoBlock.css({
-                                    "height": 0
-                                });
-                            }
-
-                        }).trigger('scroll');
-                    }
-                } //end tmStickUp function
-        })(jQuery)
-        $(document).ready(function() {
-            $('#header_container').tmStickUp({});
-        });
-        </script>
+        <!--  <script>
+        
         <!-- Header starts -->
         <header>
             <div class="span12 header_container" id="header_container">
@@ -153,11 +60,9 @@
             </div>
         </header>
         <div id="pageclick">
-            <!--
-//-->
             <div class="home-page-banner clearfix headerhome" id="headerhome">
                 <span class="transparent"></span>
-                <video preload="auto" controls loop poster="./new_images/banner-new.jpg" id="big-video-vid_html5_api" class="big-video-vid_html5_api" autoplay="" src="video\homepage-video.mp4">
+                <video preload="auto" controls loop poster="./new_images/banner-new.jpg" id="big-video-vid_html5_api" class="big-video-vid_html5_api" autoplay="" src="video/homepage-video.mp4">
                     <img src="./new_images/banner-new-ie.jpg" alt="home_banner">
                 </video>
                 <h1>Digital Technologies Transformation Partner <i class="content home-page-sprite"></i></h1>
@@ -282,7 +187,7 @@
                         </ul>
                         <!--  </div> -->
                     </div>
-                   </div>
+                </div>
             </div>
             <!-- whats new ends -->
             <!-- company profile starts -->
@@ -349,18 +254,6 @@
         </div>
     </div>
     <!-- footer ends -->
-    <script type="text/javascript" src="./js/common.js" </script>
-    < script >
-        var windowWidthfull = $(window).width();
-    if (windowWidthfull < 980) {
-        $('#pageclick').on('click', function() {
-            jQuery("#nav").slideUp();
-        });
-    }
-    </script>
-    <script type="text/javascript">
-    getBlogContent(1);
-    </script>
 </body>
 
 </html>
