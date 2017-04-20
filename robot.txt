@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Allow: /contact.html
+
+User-Agent: Googlebot
+Allow: /Index.html
+
